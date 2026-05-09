@@ -3,7 +3,21 @@
 import Link from "next/link";
 import { useState } from "react";
 import { useTranslations } from "next-intl";
-import { Menu, X } from "lucide-react";
+import {
+  Menu,
+  X,
+  Home,
+  User,
+  Sparkles,
+  Leaf,
+  BookOpen,
+  Music,
+  Layers,
+  ShoppingBag,
+  Mail,
+  Calendar,
+  type LucideIcon,
+} from "lucide-react";
 
 import LanguageSwitcher from "@/components/ui/LanguageSwitcher";
 import DarkModeToggle from "@/components/ui/DarkModeToggle";
@@ -18,8 +32,22 @@ const NAV_ITEMS = [
   { href: "/musica", key: "musica" },
   { href: "/trilineal", key: "trilineal" },
   { href: "/encargos", key: "commissions" },
+  { href: "/eventos", key: "eventos" },
   { href: "/contacto", key: "contact" },
 ] as const;
+
+const navIcons: Record<string, LucideIcon> = {
+  home: Home,
+  biografia: User,
+  exposicion: Sparkles,
+  micologia: Leaf,
+  escritos: BookOpen,
+  musica: Music,
+  trilineal: Layers,
+  commissions: ShoppingBag,
+  eventos: Calendar,
+  contact: Mail,
+};
 
 export default function Header() {
   const t = useTranslations("nav");
@@ -47,21 +75,25 @@ export default function Header() {
         </Link>
 
         <nav className="hidden lg:flex items-center gap-5" aria-label="Navegación principal">
-          {NAV_ITEMS.map((item) => (
-            <Link
-              key={item.href}
-              href={item.href}
-              className="text-sm font-medium relative"
-              style={{ color: "var(--pel-ink-soft)" }}
-            >
-              {t(item.key)}
-              <span
-                aria-hidden
-                className="absolute -bottom-1 left-0 h-px w-0 transition-all duration-300 group-hover:w-full"
-                style={{ background: "var(--pel-warm)" }}
-              />
-            </Link>
-          ))}
+          {NAV_ITEMS.map((item) => {
+            const Icon = navIcons[item.key];
+            return (
+              <Link
+                key={item.href}
+                href={item.href}
+                className="flex items-center gap-2 text-sm font-medium relative"
+                style={{ color: "var(--pel-ink-soft)" }}
+              >
+                {Icon && <Icon size={16} aria-hidden="true" className="shrink-0" />}
+                <span>{t(item.key)}</span>
+                <span
+                  aria-hidden
+                  className="absolute -bottom-1 left-0 h-px w-0 transition-all duration-300 group-hover:w-full"
+                  style={{ background: "var(--pel-warm)" }}
+                />
+              </Link>
+            );
+          })}
         </nav>
 
         <div className="flex items-center gap-2">
@@ -86,18 +118,22 @@ export default function Header() {
           aria-label="Navegación móvil"
         >
           <ul className="container-page py-3 grid grid-cols-2 gap-x-3 gap-y-2">
-            {NAV_ITEMS.map((item) => (
-              <li key={item.href}>
-                <Link
-                  href={item.href}
-                  onClick={() => setOpen(false)}
-                  className="block py-2 text-sm font-medium"
-                  style={{ color: "var(--pel-ink)" }}
-                >
-                  {t(item.key)}
-                </Link>
-              </li>
-            ))}
+            {NAV_ITEMS.map((item) => {
+              const Icon = navIcons[item.key];
+              return (
+                <li key={item.href}>
+                  <Link
+                    href={item.href}
+                    onClick={() => setOpen(false)}
+                    className="flex items-center gap-2 py-2 text-sm font-medium"
+                    style={{ color: "var(--pel-ink)" }}
+                  >
+                    {Icon && <Icon size={16} aria-hidden="true" className="shrink-0" />}
+                    <span>{t(item.key)}</span>
+                  </Link>
+                </li>
+              );
+            })}
           </ul>
         </nav>
       )}

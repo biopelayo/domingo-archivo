@@ -184,7 +184,7 @@ export const RESOURCE_CATEGORIES: ResourceCategory[] = [
     links: [
       {
         title: "Carpeta de prensa · imágenes seleccionadas",
-        href: "/galeria",
+        href: "/galeria/corpus",
         description: "Selección de fotografías de Amanda C. Blanco. Crédito obligatorio en cada imagen.",
         source: "Trilineal · este sitio",
       },

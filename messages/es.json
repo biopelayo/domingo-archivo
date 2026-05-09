@@ -17,6 +17,7 @@
     "research": "Investigación",
     "resources": "Recursos",
     "commissions": "Encargos",
+    "eventos": "Eventos",
     "contact": "Contacto"
   },
   "hero": {
@@ -49,6 +50,17 @@
     "venusBody": "Pieza singular del autor, fuera del proyecto expositivo de las 8 cuevas."
   },
   "biografia": {
+    "titulo": "Biografía",
+    "subtitulo": "Domingo nació en {lugar} el 15 de junio de {anho}.",
+    "intro": "Cazador del valle de Valgrande, naturalista de campo y autor del proyecto expositivo «Arte paleolítico asturiano». La cronología se construye a partir de los documentos del archivo personal: el currículum cerrado en febrero de 2009, los carteles de los cursos de micología, las cartas y los escritos.",
+    "facetas": {
+      "escultor": "Escultor",
+      "micologo": "Micólogo",
+      "naturalista": "Naturalista"
+    },
+    "timeline_titulo": "Cronología",
+    "para_saber_mas_titulo": "Para saber más",
+    "para_saber_mas_intro": "Las otras secciones del archivo amplían cada faceta con piezas, precios y vías de contacto.",
     "title": "Biografía",
     "subtitle": "Datos extraídos directamente de los documentos del archivo personal de Domingo.",
     "tagline": "Guarda de campo y caza, cultivador de setas y hongos comestibles.",
@@ -85,13 +97,13 @@
   "trilineal": {
     "title": "Trilineal · módulo institucional ECoC 2031",
     "subtitle": "Versión digital del proyecto expositivo de Domingo orientada a la candidatura de Oviedo a Capital Europea de la Cultura 2031.",
-    "intro": "Trilineal es la capa de mediación contemporánea, archivo IIIF y dossier institucional construida sobre el proyecto de exposición de Domingo. La cierva trilineal funciona como emblema visual del expediente.",
+    "intro": "Trilineal es la capa de mediación contemporánea, archivo IIIF y dossier institucional construida sobre el proyecto de exposición de Domingo. La cierva trilineal es el emblema visual del expediente.",
     "verDossier": "Ver dossier institucional",
     "verGaleriaCorpus": "Galería del corpus fotográfico",
     "verDashboard": "Cifras del corpus",
     "verMapa": "Mapa del Nalón ovetense",
-    "verInvestigacion": "Estado del arte (OpenAlex)",
-    "verRecursos": "Recursos curados"
+    "verInvestigacion": "Qué se publica ahora (OpenAlex)",
+    "verRecursos": "Recursos seleccionados"
   },
   "gallery": {
     "title": "Galería del corpus fotográfico",
@@ -101,6 +113,22 @@
     "filterOtr": "Otras piezas",
     "openImage": "Abrir imagen",
     "closeImage": "Cerrar"
+  },
+  "personalGallery": {
+    "kicker": "Archivo personal",
+    "title": "Galería del archivo personal",
+    "subtitle": "Una selección de fotografías que Domingo ha conservado a lo largo del tiempo: el viaje a Nápoles, la temporada de Pravia y materiales antiguos del archivo familiar.",
+    "filterAll": "Todas",
+    "filterChrono": "Cronológica",
+    "filterField": "Domingo en campo",
+    "filterTravel": "Viajes",
+    "openImage": "Abrir imagen",
+    "closeImage": "Cerrar imagen",
+    "prev": "Imagen anterior",
+    "next": "Siguiente imagen",
+    "creditLine": "Archivo personal de Domingo González de Lena Díaz. Reproducción solo con autorización del autor.",
+    "corpusNote": "Si buscas la galería del corpus escultórico fotografiado por Amanda C. Blanco,",
+    "corpusLink": "abre la galería del corpus"
   },
   "catalog": {
     "title": "Cifras del corpus",
@@ -143,11 +171,202 @@
       "datasets": "Datasets propios"
     }
   },
+  "eventos": {
+    "title": "Eventos",
+    "subtitle": "Exposiciones, charlas y actividades de Domingo González de Lena. Esta página se actualiza con cada confirmación.",
+    "actualizado": "Última actualización",
+    "subscribe": "Suscribir al calendario",
+    "contact": "Contactar para una sede",
+    "proximosTitle": "Próximos",
+    "pasadosTitle": "Pasados",
+    "mapaTitle": "Dónde han pasado o pasarán",
+    "mapaSubtitle": "Sedes con ubicación confirmada.",
+    "emptyKicker": "Sin fechas confirmadas",
+    "emptyTitle": "Domingo está preparando su próxima exposición",
+    "emptyBody": "En cuanto haya fechas confirmadas, aparecerán aquí. Si quieres acoger una muestra del corpus en tu sede, escríbele.",
+    "emptyCtaContact": "Escribir a Domingo",
+    "emptyCtaWhatsapp": "WhatsApp 662 58 57 98",
+    "calendarHint": "El enlace «Suscribir al calendario» abre un archivo iCalendar (.ics) compatible con Google Calendar, Apple Calendar y Outlook.",
+    "solicitud": {
+      "title": "Solicitar exposición o préstamo",
+      "lead": "Si representas una sala, una biblioteca, un centro educativo o un ayuntamiento, este formulario abre un correo a Domingo con los datos prerrellenados. También hay opción de WhatsApp.",
+      "nombre": "Nombre y apellidos",
+      "sede": "Sede o institución",
+      "ciudad": "Ciudad",
+      "fechas": "Fechas previstas",
+      "fechasPlaceholder": "p. ej. octubre 2026 o del 5 al 25 de noviembre",
+      "mensaje": "Mensaje",
+      "submitEmail": "Enviar por correo",
+      "submitWhatsapp": "Enviar por WhatsApp",
+      "nota": "El formulario no envía datos a ningún servidor: abre tu cliente de correo o WhatsApp con el mensaje preparado."
+    }
+  },
   "commissions": {
     "title": "Encargos",
-    "lead": "Domingo González de Lena Díaz acepta encargos de reproducción patrimonial: piezas del catálogo, piezas a medida, talleres, donaciones a centros educativos. El contacto directo con Domingo es 662 58 57 98 o domingodelena@gmail.com.",
+    "lead": "Domingo trabaja la piedra a mano en su taller de Lena. Aquí están las piezas disponibles, los precios reales, los plazos honestos y el contacto directo. Sin intermediarios.",
     "preciosTitle": "Tabla de precios vigente",
     "preciosNota": "Lista redactada por el autor. Importes en euros, sin IVA. Piedras pequeñas: 5 €.",
+    "encargos": {
+      "kicker": "Funnel comercial",
+      "phone": "662 58 57 98",
+      "email": "domingodelena@gmail.com",
+      "destacados": {
+        "title": "Piezas disponibles ahora",
+        "lead": "Quince piezas seleccionadas del catálogo, con foto y precio. Para reservar una, basta con un mensaje de WhatsApp.",
+        "fichasNota": "Las descripciones se están redactando con Domingo. De momento mostramos referencia, foto y precio.",
+        "ctaReservar": "Reservar pieza",
+        "refLabel": "Referencia"
+      },
+      "casos": {
+        "title": "Para qué sirve un encargo",
+        "lead": "Ocho situaciones en las que la gente suele llamar.",
+        "items": {
+          "regalo": {
+            "title": "Regalo personal",
+            "body": "Aniversarios, bodas, jubilaciones. Una pieza de piedra con motivo paleolítico, firmada por Domingo."
+          },
+          "interior": {
+            "title": "Decoración interior",
+            "body": "Salones, despachos, recibidores. Las piezas pequeñas (de 15 a 50 €) caben en una estantería."
+          },
+          "exterior": {
+            "title": "Jardín y exterior",
+            "body": "Piezas medianas y grandes para jardines, patios y terrazas. Resistentes al clima asturiano."
+          },
+          "publico": {
+            "title": "Espacio público y monumento",
+            "body": "Plazas, parques y rotondas. Domingo ha realizado piezas monumentales por encargo municipal."
+          },
+          "coleccion": {
+            "title": "Colección privada",
+            "body": "Para coleccionistas de arte rupestre, etnografía o escultura asturiana contemporánea."
+          },
+          "personalizado": {
+            "title": "Encargo personalizado",
+            "body": "Si tienes un motivo concreto en mente (un animal, un grabado de una cueva determinada), Domingo lo trabaja a medida."
+          },
+          "institucional": {
+            "title": "Trabajo institucional",
+            "body": "Universidades, museos, ayuntamientos y centros culturales. Domingo factura como autónomo."
+          },
+          "cuevas": {
+            "title": "Recuerdo de cuevas asturianas",
+            "body": "Reproducciones fieles de grabados de Pindal, La Lluera, Tito Bustillo, La Peña de Candamo y otras."
+          }
+        }
+      },
+      "plazos": {
+        "title": "Plazos de entrega",
+        "lead": "Domingo trabaja a mano en su taller. Los plazos dependen del clima, la piedra disponible y la complejidad del motivo. Para fechas concretas, mejor preguntar.",
+        "tabla": {
+          "tamano": "Tamaño",
+          "plazo": "Plazo",
+          "filas": {
+            "pequena": {
+              "tamano": "Pieza pequeña (S, menos de 5 kg)",
+              "plazo": "1 a 2 semanas"
+            },
+            "mediana": {
+              "tamano": "Pieza mediana (P, B, T)",
+              "plazo": "3 a 4 semanas"
+            },
+            "grande": {
+              "tamano": "Pieza grande o encargo personalizado",
+              "plazo": "6 a 12 semanas"
+            }
+          }
+        }
+      },
+      "pagos": {
+        "title": "Métodos de pago aceptados",
+        "lead": "Domingo cobra como autónomo. Los métodos vivos hoy:",
+        "items": {
+          "bizum": {
+            "title": "Bizum",
+            "body": "Pago directo al 662 58 57 98."
+          },
+          "transferencia": {
+            "title": "Transferencia bancaria",
+            "body": "Datos por mensaje privado al confirmar el encargo."
+          },
+          "efectivo": {
+            "title": "Efectivo en taller",
+            "body": "Si recoges la pieza en Lena, se puede pagar en mano."
+          },
+          "paypal": {
+            "title": "PayPal",
+            "body": "Disponible con un coste añadido por la comisión de la plataforma."
+          },
+          "tarjeta": {
+            "title": "Tarjeta presencial",
+            "body": "Datafono móvil para pagos presenciales en el taller o en una entrega concertada."
+          },
+          "fraccionado": {
+            "title": "Pago fraccionado",
+            "body": "Acuerdo personal si la pieza supera 200 €. Mitad al encargar, mitad al entregar."
+          }
+        }
+      },
+      "envios": {
+        "title": "Gastos de envío",
+        "lead": "Tarifa orientativa. La pieza viaja en caja personalizada, lo que añade entre 3 y 5 € al envío.",
+        "tabla": {
+          "zona": "Zona",
+          "peso": "Peso",
+          "coste": "Coste",
+          "filas": {
+            "esp1": {
+              "zona": "España península",
+              "peso": "Menos de 5 kg",
+              "coste": "8 a 15 €"
+            },
+            "esp2": {
+              "zona": "España península",
+              "peso": "5 a 15 kg",
+              "coste": "18 a 30 €"
+            },
+            "esp3": {
+              "zona": "España península",
+              "peso": "Más de 15 kg",
+              "coste": "Presupuesto a medida"
+            },
+            "baleares": {
+              "zona": "Baleares",
+              "peso": "Cualquier peso",
+              "coste": "Tarifa península + 5 €"
+            },
+            "canarias": {
+              "zona": "Canarias, Ceuta y Melilla",
+              "peso": "Cualquier peso",
+              "coste": "Gestión particular por aduana, presupuesto a medida"
+            },
+            "ue": {
+              "zona": "UE continental",
+              "peso": "Cualquier peso",
+              "coste": "25 a 60 € según peso y país"
+            },
+            "taller": {
+              "zona": "Recogida en taller (Lena, Asturias)",
+              "peso": "Cualquier peso",
+              "coste": "Sin coste"
+            }
+          }
+        }
+      },
+      "contacto": {
+        "title": "Hablar con Domingo",
+        "lead": "El canal más rápido es WhatsApp. Si prefieres correo, también está disponible.",
+        "ctaWhatsapp": "Hablar con Domingo",
+        "ctaEmail": "Escribir a domingodelena@gmail.com",
+        "wa": "WhatsApp",
+        "telLabel": "Teléfono",
+        "horario": "Horario habitual: de lunes a sábado, de 10:00 a 20:00."
+      },
+      "devoluciones": {
+        "title": "Política de devoluciones",
+        "body": "Si la pieza llega rota por transporte, Domingo sustituye o devuelve el importe sin discusión. Si la pieza no convence al recibirla, hay 14 días naturales para devolverla en perfecto estado; los gastos de envío de vuelta corren a cargo del comprador. Las piezas hechas a medida no admiten devolución salvo defecto de fabricación."
+      }
+    },
     "form": {
       "name": "Nombre y apellidos",
       "email": "Correo electrónico",

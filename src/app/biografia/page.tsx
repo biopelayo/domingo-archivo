@@ -1,26 +1,29 @@
 import type { Metadata } from "next";
-import Image from "next/image";
 import Link from "next/link";
 import { promises as fs } from "node:fs";
 import path from "node:path";
-import { useTranslations } from "next-intl";
+import { getTranslations } from "next-intl/server";
+import { Hammer, Leaf, Mountain, ArrowUpRight } from "lucide-react";
 
 import DomingoBubbles from "@/components/ui/DomingoBubbles";
+import Timeline, { type TimelineItem } from "@/components/biografia/Timeline";
 
 export const metadata: Metadata = { title: "Biografía" };
 
+type CronologiaEntry = TimelineItem & {
+  incierto?: boolean;
+};
+
 type Bio = {
   nombre: string;
+  nombre_completo?: string;
   lugar: string;
-  tagline: string;
-  fuente_tagline: string;
-  facetas: { id: string; titulo: string; descripcion: string }[];
-  contacto_artistico: { responsable: string; telefono: string; rol: string };
-  heraldica: {
-    paterno: { apellido: string; fuente_imagen: string };
-    materno: { apellido: string; nota: string };
-    linea_pelayo: { apellido: string; fuente_imagen: string };
+  datos_publicos?: {
+    lugar_nacimiento?: string;
+    anho_nacimiento?: number;
+    fecha_nacimiento_completa?: string;
   };
+  cronologia: CronologiaEntry[];
 };
 
 async function loadBio(): Promise<Bio> {
@@ -31,140 +34,123 @@ async function loadBio(): Promise<Bio> {
   return JSON.parse(txt);
 }
 
-async function listProfilePhotos(): Promise<string[]> {
-  try {
-    const dir = path.join(process.cwd(), "public", "personal", "perfil");
-    const entries = await fs.readdir(dir);
-    return entries
-      .filter((f) => /\.jpe?g$/i.test(f))
-      .sort()
-      .slice(0, 12)
-      .map((f) => `/personal/perfil/${f}`);
-  } catch {
-    return [];
-  }
-}
-
-function BioHeader() {
-  const t = useTranslations("biografia");
-  return (
-    <>
-      <p className="kicker mb-2">Archivo personal</p>
-      <h1 className="headline">{t("title")}</h1>
-      <div className="h-divider" />
-      <p className="lead text-lg mt-4">{t("subtitle")}</p>
-    </>
-  );
-}
-
 export default async function BiografiaPage() {
   const bio = await loadBio();
-  const photos = await listProfilePhotos();
+  const t = await getTranslations("biografia");
+
+  const hitos = bio.cronologia
+    .filter((h) => h.incierto !== true)
+    .sort((a, b) => a.anho - b.anho);
+
+  const nombre = bio.nombre_completo ?? bio.nombre;
+  const lugarNac = bio.datos_publicos?.lugar_nacimiento ?? "Pajares (Lena)";
+  const anhoNac = bio.datos_publicos?.anho_nacimiento ?? 1959;
+
+  const facetas = [
+    { id: "escultor", Icon: Hammer, label: t("facetas.escultor") },
+    { id: "micologo", Icon: Leaf, label: t("facetas.micologo") },
+    { id: "naturalista", Icon: Mountain, label: t("facetas.naturalista") },
+  ];
+
+  const enlaces = [
+    { href: "/exposicion", label: "Arte paleolítico" },
+    { href: "/encargos", label: "Encargos" },
+    { href: "/contacto", label: "Contacto" },
+  ];
 
   return (
     <section className="section relative overflow-hidden">
-      <DomingoBubbles theme="mixed" count={22} giant />
-      <div className="container-page max-w-5xl relative" style={{ zIndex: 2 }}>
-        <BioHeader />
+      <DomingoBubbles theme="mixed" count={18} giant />
+      <div className="container-page max-w-4xl relative" style={{ zIndex: 2 }}>
+        {/* Hero */}
+        <header>
+          <p className="kicker mb-2">{t("titulo")}</p>
+          <h1 className="headline">{nombre}</h1>
+          <div className="h-divider" />
+          <p
+            className="lead text-lg mt-4"
+            style={{ color: "var(--pel-ink)" }}
+          >
+            {t("subtitulo", { lugar: lugarNac, anho: String(anhoNac) })}
+          </p>
+          <p className="lead mt-3">{t("intro")}</p>
 
-        <div className="grid lg:grid-cols-3 gap-8 mt-8">
-          <div className="lg:col-span-2">
-            <p className="lead text-xl" style={{ color: "var(--pel-ink)" }}>
-              <strong>{bio.nombre}</strong> — {bio.lugar}.
-            </p>
-            <p className="lead mt-3" style={{ fontSize: "1.05rem" }}>
-              <em>«{bio.tagline}»</em>
-            </p>
-            <p className="text-xs mt-2" style={{ color: "var(--pel-muted)" }}>
-              {bio.fuente_tagline}
-            </p>
-          </div>
-          <div className="card">
-            <p className="kicker mb-2">Contacto artístico</p>
-            <p className="text-lg" style={{ fontWeight: 700, color: "var(--pel-green)" }}>
-              {bio.contacto_artistico.responsable}
-            </p>
-            <p style={{ color: "var(--pel-ink-soft)", fontSize: "0.9rem" }}>
-              {bio.contacto_artistico.rol}
-            </p>
-            <p className="mt-2 text-lg">
-              <a href={`tel:${bio.contacto_artistico.telefono.replace(/\s/g, "")}`}>
-                {bio.contacto_artistico.telefono}
-              </a>
-            </p>
-            <Link href="/encargos" className="btn btn-ghost mt-4 inline-flex" style={{ fontSize: "0.85rem" }}>
-              Ir al formulario de encargos
-            </Link>
-          </div>
-        </div>
+          {/* Facetas con icono */}
+          <ul className="flex flex-wrap gap-2 mt-5" aria-label="Facetas">
+            {facetas.map(({ id, Icon, label }) => (
+              <li
+                key={id}
+                className="inline-flex items-center gap-2"
+                style={{
+                  background: "var(--pel-green-4)",
+                  color: "var(--pel-green)",
+                  border: "1px solid var(--pel-green-3)",
+                  padding: "0.4rem 0.85rem",
+                  borderRadius: 999,
+                  fontSize: "0.88rem",
+                  fontWeight: 600,
+                }}
+              >
+                <Icon size={16} aria-hidden />
+                {label}
+              </li>
+            ))}
+          </ul>
+        </header>
 
-        <h2 className="text-2xl font-bold mt-12" style={{ color: "var(--pel-green)" }}>Cinco facetas</h2>
-        <div className="grid gap-4 mt-4 sm:grid-cols-2">
-          {bio.facetas.map((f) => (
-            <div key={f.id} className="card">
-              <p className="kicker mb-1" style={{ color: "var(--pel-warm)" }}>Faceta</p>
-              <h3 style={{ color: "var(--pel-green)", fontWeight: 700, fontSize: "1.1rem" }}>{f.titulo}</h3>
-              <p className="lead mt-2" style={{ fontSize: "0.92rem" }}>{f.descripcion}</p>
-            </div>
-          ))}
-        </div>
+        {/* Timeline */}
+        <section className="mt-12" aria-labelledby="timeline-titulo">
+          <h2
+            id="timeline-titulo"
+            className="text-2xl font-bold"
+            style={{ color: "var(--pel-green)" }}
+          >
+            {t("timeline_titulo")}
+          </h2>
+          <p
+            className="mt-1"
+            style={{ color: "var(--pel-muted)", fontSize: "0.88rem" }}
+          >
+            {hitos.length} hitos documentados.
+          </p>
+          <Timeline items={hitos} />
+        </section>
 
-        {photos.length > 0 && (
-          <>
-            <h2 className="text-2xl font-bold mt-12" style={{ color: "var(--pel-green)" }}>Galería personal</h2>
-            <p className="lead mt-2" style={{ fontSize: "0.92rem" }}>
-              Fotografías procedentes del perfil web archivado.
-            </p>
-            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-3 mt-4">
-              {photos.map((src, i) => (
-                <div key={src} className="card p-0 overflow-hidden" style={{ aspectRatio: "1", borderRadius: 12 }}>
-                  <Image
-                    src={src}
-                    alt={`Fotografía personal ${i + 1}`}
-                    width={400}
-                    height={400}
-                    sizes="(max-width: 640px) 50vw, 25vw"
-                    style={{ width: "100%", height: "100%", objectFit: "cover" }}
+        {/* Para saber más */}
+        <section className="mt-16" aria-labelledby="saber-mas-titulo">
+          <h2
+            id="saber-mas-titulo"
+            className="text-2xl font-bold"
+            style={{ color: "var(--pel-green)" }}
+          >
+            {t("para_saber_mas_titulo")}
+          </h2>
+          <p className="lead mt-2" style={{ fontSize: "0.95rem" }}>
+            {t("para_saber_mas_intro")}
+          </p>
+          <div className="grid gap-3 mt-4 sm:grid-cols-3">
+            {enlaces.map((e) => (
+              <Link key={e.href} href={e.href} className="card group">
+                <div className="flex items-center justify-between gap-2">
+                  <span
+                    style={{
+                      color: "var(--pel-green)",
+                      fontWeight: 700,
+                      fontSize: "1rem",
+                    }}
+                  >
+                    {e.label}
+                  </span>
+                  <ArrowUpRight
+                    size={18}
+                    style={{ color: "var(--pel-warm)" }}
+                    aria-hidden
                   />
                 </div>
-              ))}
-            </div>
-          </>
-        )}
-
-        <h2 className="text-2xl font-bold mt-12" style={{ color: "var(--pel-green)" }}>Heráldica familiar</h2>
-        <div className="grid sm:grid-cols-3 gap-4 mt-4">
-          <div className="card text-center">
-            <Image
-              src={bio.heraldica.paterno.fuente_imagen}
-              alt={`Escudo ${bio.heraldica.paterno.apellido}`}
-              width={140}
-              height={170}
-              style={{ width: 140, height: "auto", margin: "0 auto" }}
-            />
-            <p className="kicker mt-3">Paterno</p>
-            <p style={{ fontWeight: 700 }}>{bio.heraldica.paterno.apellido}</p>
+              </Link>
+            ))}
           </div>
-          <div className="card text-center">
-            <div style={{ height: 170, display: "flex", alignItems: "center", justifyContent: "center", color: "var(--pel-muted)" }}>
-              (sin escudo en el archivo)
-            </div>
-            <p className="kicker mt-3">Materno</p>
-            <p style={{ fontWeight: 700 }}>{bio.heraldica.materno.apellido}</p>
-            <p className="text-xs mt-1" style={{ color: "var(--pel-muted)" }}>{bio.heraldica.materno.nota}</p>
-          </div>
-          <div className="card text-center">
-            <Image
-              src={bio.heraldica.linea_pelayo.fuente_imagen}
-              alt={`Escudo ${bio.heraldica.linea_pelayo.apellido}`}
-              width={140}
-              height={170}
-              style={{ width: 140, height: "auto", margin: "0 auto" }}
-            />
-            <p className="kicker mt-3">Línea materna del editor</p>
-            <p style={{ fontWeight: 700 }}>{bio.heraldica.linea_pelayo.apellido}</p>
-          </div>
-        </div>
+        </section>
       </div>
     </section>
   );

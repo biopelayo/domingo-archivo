@@ -206,7 +206,7 @@ export default async function ResearchPage() {
             <li>Para guardar la bibliografía completa en Zotero, ve a la página de recursos.</li>
           </ul>
           <p className="mt-6">
-            <Link href="/recursos" className="btn btn-ghost">Ir a recursos curados</Link>
+            <Link href="/recursos" className="btn btn-ghost">Ir a recursos seleccionados</Link>
           </p>
         </div>
       </div>

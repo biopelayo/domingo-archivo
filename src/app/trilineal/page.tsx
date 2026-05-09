@@ -6,11 +6,11 @@ import { ArrowRight } from "lucide-react";
 export const metadata: Metadata = { title: "Proyecto Trilineal · ECoC 2031" };
 
 const ENLACES = [
-  { href: "/galeria", labelKey: "verGaleriaCorpus", body: "120 fotografías Fujifilm X-T4 sobre obra de Domingo." },
+  { href: "/galeria/corpus", labelKey: "verGaleriaCorpus", body: "120 fotografías Fujifilm X-T4 sobre obra de Domingo." },
   { href: "/catalogo", labelKey: "verDashboard", body: "Cuántas piezas hay, en qué estado de catalogación están y cuáles ya están validadas." },
   { href: "/mapa", labelKey: "verMapa", body: "Yacimientos del concejo de Oviedo + UNESCO Asturias." },
   { href: "/investigacion", labelKey: "verInvestigacion", body: "Qué se está publicando ahora mismo en el mundo académico sobre arte paleolítico cantábrico, cierva trilineal y los yacimientos del Nalón." },
-  { href: "/recursos", labelKey: "verRecursos", body: "Enlaces curados, datasets, BibTeX." },
+  { href: "/recursos", labelKey: "verRecursos", body: "Enlaces seleccionados, datasets, BibTeX." },
 ];
 
 function TriHeader() {

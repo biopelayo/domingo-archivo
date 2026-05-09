@@ -14,3 +14,6 @@ public/images/web/*_1600.*
 
 # Datos privados de runtime (formulario fallback local)
 .data/
+
+# PDFs sueltos en raíz que no son del proyecto
+/*.pdf

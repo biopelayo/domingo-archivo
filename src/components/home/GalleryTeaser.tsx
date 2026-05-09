@@ -25,14 +25,14 @@ export default async function GalleryTeaser() {
             </h2>
             <div className="h-divider" />
           </div>
-          <Link href="/galeria" className="btn btn-primary">Ver el corpus completo</Link>
+          <Link href="/galeria/corpus" className="btn btn-primary">Ver el corpus completo</Link>
         </div>
 
         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-3">
           {pieces.map((p) => (
             <Link
               key={p.id_pieza}
-              href="/galeria"
+              href="/galeria/corpus"
               className="card p-0 overflow-hidden block relative"
               style={{ aspectRatio: "2/3", borderRadius: 12 }}
               aria-label={p.id_pieza}

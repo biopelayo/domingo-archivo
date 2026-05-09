@@ -15,6 +15,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/musica",
     "/trilineal",
     "/galeria",
+    "/galeria/corpus",
     "/catalogo",
     "/mapa",
     "/investigacion",
