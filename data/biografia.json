@@ -1,8 +1,89 @@
 {
   "nombre": "Domingo González de Lena Díaz",
+  "nombre_completo": "Domingo González de Lena Díaz",
   "lugar": "Oviedo, Asturias",
   "tagline": "Guarda de campo y caza, cultivador de setas y hongos comestibles, reproductor de arte paleolítico asturiano.",
   "fuente_tagline": "Libreto «Iniciación a la micología», Cursos_Domingo, 2013",
+  "actualizado": "2026-05-09",
+  "fuentes_leidas": [
+    "06_Documentos_Personales/Papa_Arte_Piedras/curriculum txomi.doc",
+    "06_Documentos_Personales/Papa_Arte_Piedras/Documents/PROYECTO PARA LA INSTALACION DE UNA EXPOSICION SOBRE ARTE PALEOLITICO ASTURIANO.doc",
+    "06_Documentos_Personales/Papa_Arte_Piedras/Documents/Arte Paleolítico.docx",
+    "06_Documentos_Personales/Papa_Arte_Piedras/Documents/carta de presentación fundacion oso.docx",
+    "06_Documentos_Personales/Papa_Arte_Piedras/Documents/carta colegio de san claudio.doc",
+    "02_Micologia/Cursos_Domingo/CURSO MICOLOGIA LIBRETO.docx",
+    "02_Micologia/Cursos_Domingo/CONTENIDO DEL PROGRAMA.docx",
+    "02_Micologia/Cursos_Domingo/Cartel curso setas.docx",
+    "02_Micologia/Cursos_Domingo/curso iniciacion san claudio.docx",
+    "02_Micologia/Cursos_Domingo/cartel curso 2015.docx",
+    "02_Micologia/Cursos_Domingo/INICIACION 2014.docx",
+    "06_Documentos_Personales/Filosofia_y_Trabajos/KEFRU EL HEMOSTÁTICO.docx"
+  ],
+  "fuentes_excluidas_pelayo": [
+    "03_Academico/Becas_y_CV/cv.pdf",
+    "03_Academico/Becas_y_CV/CV_otro.pdf",
+    "03_Academico/Becas_y_CV/CVN.pdf",
+    "03_Academico/Becas_y_CV/CV AND.pdf",
+    "03_Academico/Becas_y_CV/Pelayo.pdf",
+    "03_Academico/Becas_y_CV/PELAYO GONZALEZ DE LENA RODRIGUEZ.doc",
+    "03_Academico/Becas_y_CV/Europass-CV-120222-GonzálezDeLenaRodriguez (3).pdf",
+    "03_Academico/Becas_y_CV/curriculum.doc",
+    "03_Academico/Becas_y_CV/CURRICULUM VITAE VERANO.doc",
+    "03_Academico/Becas_y_CV/CV.doc",
+    "03_Academico/Becas_y_CV/CV ING.doc",
+    "03_Academico/Becas_y_CV/curriculum_basico.doc"
+  ],
+  "fuentes_excluidas_otros": [
+    "03_Academico/Becas_y_CV/Europass actualizado english.pdf [pertenece a Luis Palicio Sanz, amigo del usuario]"
+  ],
+  "fuentes_no_legibles": [
+    "06_Documentos_Personales/Papa_Arte_Piedras/Documents/curriculo.pdf [PDF dañado, xref ilegible]"
+  ],
+  "nota_autoria": "Importante: la carpeta E:/Domingo_Organizado/03_Academico/Becas_y_CV/ está mal categorizada. Todos sus archivos son de Pelayo González de Lena Rodríguez (hijo, b. 1986, biólogo molecular) o de su amigo Luis Palicio. El currículum real de Domingo se encuentra en E:/Domingo_Organizado/06_Documentos_Personales/Papa_Arte_Piedras/curriculum txomi.doc (firmado 18/02/2009).",
+  "datos_publicos": {
+    "lugar_nacimiento": "Pajares, concejo de Lena, Asturias",
+    "anho_nacimiento": 1959,
+    "fecha_nacimiento_completa": "1959-06-15",
+    "lugar_residencia": "San Claudio, Oviedo (Asturias)",
+    "apodo": "Txomi / Chomi",
+    "filiacion": "Hijo de cazador conocido del valle de Valgrande (Pajares)",
+    "formacion": [
+      {"anho": 1975, "titulo": "Bachillerato Superior"},
+      {"anho": 1976, "titulo": "COU"},
+      {"anho": 1990, "titulo": "Curso de cultivo de hortalizas bajo abrigo", "horas": 200, "entidad": "Consejería de Agricultura, Principado de Asturias"},
+      {"anho": 1991, "titulo": "Curso de Agricultura ecológica", "horas": 380, "entidad": "Consejería de Agricultura, Principado de Asturias"},
+      {"anho": 1991, "titulo": "Curso de Sistemas de Riego", "horas": 150, "entidad": "Consejería de Agricultura, Principado de Asturias"},
+      {"anho": 1992, "titulo": "Curso de cultivo de hongos y setas comestibles", "horas": 500, "entidad": "Instituto del Campo, Fundación Príncipe de Asturias"},
+      {"anho": 2004, "titulo": "Técnico en Audiovisuales", "horas": 525, "entidad": "Plan de Formación Profesional de Asturias, empresa GENINFOR"},
+      {"anho": 2009, "titulo": "Guarda particular de campo (especialidad guarda marítimo-pesquero y especialidad guarda de caza)"}
+    ]
+  },
+  "cronologia": [
+    {"anho": 1959, "hito": "Nacimiento", "descripcion": "Nace en Pajares, concejo de Lena (Asturias). 15 de junio.", "fuente": "curriculum txomi.doc", "categoria": "biografia"},
+    {"anho": 1975, "hito": "Bachillerato Superior", "descripcion": "Finaliza el Bachillerato Superior.", "fuente": "curriculum txomi.doc", "categoria": "formacion"},
+    {"anho": 1976, "hito": "COU", "descripcion": "Curso de Orientación Universitaria.", "fuente": "curriculum txomi.doc", "categoria": "formacion"},
+    {"anho": 1984, "hito": "Inicio actividad agraria autónoma", "descripcion": "Comienza como agricultor autónomo de hortalizas, frutas, tabaco y setas en el marco de cultivos agrarios ecológicos. Hasta agosto de 1986.", "fuente": "curriculum txomi.doc", "categoria": "trabajo"},
+    {"anho": 1985, "hito": "Cultivo de setas para Setastur", "descripcion": "Trabaja como autónomo cultivador de setas para la empresa Setastur. Hasta septiembre de 1987.", "fuente": "curriculum txomi.doc", "categoria": "trabajo"},
+    {"anho": 1988, "hito": "Gerencia empresa Eternia", "descripcion": "Gerente de la empresa de mármoles Eternia. Hasta agosto de 1990.", "fuente": "curriculum txomi.doc", "categoria": "trabajo"},
+    {"anho": 1990, "hito": "Formación en cultivo de hortalizas bajo abrigo", "descripcion": "Curso de 200 horas impartido por la Consejería de Agricultura del Principado de Asturias.", "fuente": "curriculum txomi.doc", "categoria": "formacion"},
+    {"anho": 1991, "hito": "Formación en agricultura ecológica y riego", "descripcion": "Cursos de Agricultura ecológica (380 h) y Sistemas de Riego (150 h) en la Consejería de Agricultura del Principado.", "fuente": "curriculum txomi.doc", "categoria": "formacion"},
+    {"anho": 1992, "hito": "Formación en cultivo de hongos comestibles", "descripcion": "Curso de 500 horas en cultivo de hongos y setas comestibles (Instituto del Campo, Fundación Príncipe de Asturias).", "fuente": "curriculum txomi.doc", "categoria": "formacion"},
+    {"anho": 1996, "hito": "Empresa propia: Setas Txomi", "descripcion": "Funda y gestiona como autónomo la empresa Setas Txomi: cultivo, producción, envasado y comercialización de setas y hongos comestibles. Hasta septiembre de 1998.", "fuente": "curriculum txomi.doc", "categoria": "trabajo"},
+    {"anho": 2004, "hito": "Formación como Técnico en Audiovisuales", "descripcion": "Curso de 525 horas en GENINFOR dentro del Plan de Formación Profesional de Asturias.", "fuente": "curriculum txomi.doc", "categoria": "formacion"},
+    {"anho": 2004, "hito": "Vigilante medioambiental de costas (Tragsa)", "descripcion": "Trabajo en Tragsa como vigilante medioambiental tras el Prestige: localización de vertidos de hidrocarburo y conteo de nutrias afectadas en Ribadedeva y Llanes. Hasta enero de 2006.", "fuente": "curriculum txomi.doc", "categoria": "trabajo"},
+    {"anho": 2008, "hito": "Carta al colegio público de San Claudio", "descripcion": "Reclamación formal al centro escolar de su hijo Enol por trato de la cuidadora del comedor escolar.", "fuente": "carta colegio de san claudio.doc", "categoria": "biografia"},
+    {"anho": 2009, "hito": "Habilitación como Guarda particular de campo", "descripcion": "Especialidades de guarda marítimo-pesquero y guarda de caza.", "fuente": "curriculum txomi.doc", "categoria": "formacion"},
+    {"anho": 2009, "hito": "Carta a la Fundación Oso Pardo", "descripcion": "Ofrece sus servicios para los corredores ecológicos de la cordillera Cantábrica, presentando como aval su origen pajariego, su condición de guarda y su formación audiovisual. Fechada 19 de febrero de 2009.", "fuente": "carta de presentación fundacion oso.docx", "categoria": "biografia"},
+    {"anho": 2009, "hito": "Curriculum Vitae cerrado", "descripcion": "Cierre del CV oficial el 18 de febrero de 2009, base documental de toda la trayectoria laboral hasta esa fecha.", "fuente": "curriculum txomi.doc", "categoria": "biografia"},
+    {"anho": 2009, "hito": "Proyecto «Exposición sobre Arte Paleolítico Asturiano»", "descripcion": "Dossier para una exposición de 25 piezas en piedra, divulgación de grabados rupestres de ocho cuevas asturianas: Pindal, Tito Bustillo, Les Pedroses, Buxu, Llonín, Lluera, Covaciella y Peña de San Román de Candamo. Apoyado en estudios de Breuil, Vega del Sella, Hernández Pacheco, Obermaier, Jordá y Fortea. Precios entre 100 y 185 euros por pieza.", "fuente": "PROYECTO PARA LA INSTALACION DE UNA EXPOSICION SOBRE ARTE PALEOLITICO ASTURIANO.doc", "categoria": "exposicion", "incierto": false},
+    {"anho": 2009, "hito": "Inauguración expositiva en el Café Bar Plaza", "descripcion": "Exposición de grabados y pinturas (réplicas de las principales cuevas asturianas) en el Café Bar Plaza (Plaza del Riego, Oviedo). Fecha exacta del año por confirmar; el documento data del entorno de febrero de 2009.", "fuente": "Arte Paleolítico.docx", "categoria": "exposicion", "incierto": true},
+    {"anho": 2013, "hito": "1.ª edición «Curso Iniciación a la Micología»", "descripcion": "Curso impartido por Domingo en el Restaurante Casa Lito (Altamirano 11, Oviedo). Material didáctico propio, dos horas y media los lunes, salida al campo y cena micológica de fin de curso. Fechas del 3 al 24 de noviembre.", "fuente": "Cartel curso setas.docx", "categoria": "docencia", "incierto": true},
+    {"anho": 2014, "hito": "2.ª edición del curso de Micología", "descripcion": "Curso impartido en La Casona de San Claudio. Horarios los jueves de 19:30 a 22:00, del 6 al 27 de noviembre.", "fuente": "curso iniciacion san claudio.docx", "categoria": "docencia", "incierto": true},
+    {"anho": 2014, "hito": "Inicio del trabajo escrito propio", "descripcion": "Primeros ensayos personales conservados: «El evolucionismo es un cuento», «Filosofía Woody Allen», trabajo sobre eco-seguridad social, resúmenes de filosofía. Material redactado durante el curso 2014-2015.", "fuente": "Filosofia_y_Trabajos/", "categoria": "escritos"},
+    {"anho": 2015, "hito": "Ensayos sobre Malinowski y filosofía", "descripcion": "Continuación de los escritos personales: trabajo sobre Malinowski (antropología), «Filo» y resumen del tema 15 de filosofía.", "fuente": "Filosofia_y_Trabajos/malinowski.docx, filo.docx", "categoria": "escritos"},
+    {"anho": 2015, "hito": "4.ª edición del curso de Micología", "descripcion": "Curso impartido en el Restaurante Casa Julio (Plaza del Sol, Oviedo) entre el 17 de noviembre y el 22 de diciembre. Sigue el patrón de horarios los jueves de 19:30 a 22:00, salida al campo y cena de fin de curso.", "fuente": "cartel curso 2015.docx", "categoria": "docencia"},
+    {"anho": 2021, "hito": "Relato «Kefru, el hemostático»", "descripcion": "Cuento ambientado en el Antiguo Egipto: un joven boyero tebano descubre su don para detener hemorragias y es reclamado por los sacerdotes de Amón y la Casa de la Vida. Domingo combina narrativa, mitología egipcia y conocimiento médico tradicional.", "fuente": "Filosofia_y_Trabajos/KEFRU EL HEMOSTÁTICO.docx", "categoria": "escritos"}
+  ],
   "facetas": [
     {
       "id": "guarda",
@@ -22,7 +103,7 @@
     {
       "id": "escritos",
       "titulo": "Escritos",
-      "descripcion": "Ensayos breves sobre filosofía, antropología (Malinowski), espiritualidad y budismo, cine (Woody Allen), micología medicinal (KEFRU). Periodos 2014–2021."
+      "descripcion": "Ensayos breves sobre filosofía, antropología (Malinowski), espiritualidad y budismo, cine (Woody Allen), micología medicinal (KEFRU). Periodos 2014-2021."
     },
     {
       "id": "musica",
