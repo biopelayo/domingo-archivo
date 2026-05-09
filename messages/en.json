@@ -1,0 +1,138 @@
+{
+  "meta": {
+    "title": "Domingo González de Lena Díaz · personal archive",
+    "description": "Public archive of Domingo González de Lena Díaz: countryside and game warden, mushroom grower, author of an exhibition project on Asturian Palaeolithic art (8 caves, 25 pieces), writings and Asturian song scores."
+  },
+  "nav": {
+    "home": "Home",
+    "biografia": "Biography",
+    "exposicion": "Palaeolithic art",
+    "micologia": "Mycology",
+    "escritos": "Writings",
+    "musica": "Music",
+    "trilineal": "Trilineal project",
+    "gallery": "Gallery",
+    "catalog": "Numbers",
+    "map": "Map",
+    "research": "Research",
+    "resources": "Resources",
+    "commissions": "Commissions",
+    "about": "About",
+    "contact": "Contact"
+  },
+  "hero": {
+    "kicker": "Personal archive",
+    "title": "Domingo González de Lena Díaz",
+    "subtitle": "Countryside and game warden, mushroom grower, reproducer of Asturian Palaeolithic art.",
+    "lead": "Five facets in one archive: the exhibition project of 25 stone pieces from Asturian caves, the mycology courses, the short writings, the music and the biography. Edited by his son Pelayo González de Lena Rodríguez.",
+    "ctaPrimary": "Meet the author",
+    "ctaSecondary": "See the art corpus"
+  },
+  "stats": {
+    "pieces": "pieces in the exhibition project",
+    "caves": "Asturian caves represented",
+    "courses": "years of mycology courses",
+    "writings": "published writings"
+  },
+  "manifesto": {
+    "title": "Manifesto",
+    "lead": "The project turns Domingo González de Lena Díaz's sculptural corpus into a public-access infrastructure to the Palaeolithic engraving of the Nalón.",
+    "verbs": "Three guiding verbs: reproduce, symbolically preserve, democratise.",
+    "warning": "Reproductions work as tools of interpretation, education and tactile accessibility. The original heritage stays in the caves. The trilinear hind is treated as a proposed visual emblem, with the caution the bibliography demands."
+  },
+  "cierva": {
+    "title": "The trilinear hind",
+    "lead": "Three lines linking origin, community and future.",
+    "body": "The term describes a recurring graphic treatment in the Franco-Cantabrian region: three parallel strokes that delimit the silhouette of the cervid. The project takes the motif as a curatorial and communicative emblem, and records the open scientific debate in its catalogue and bibliography."
+  },
+  "gallery": {
+    "title": "Gallery",
+    "subtitle": "Sculptural corpus photographically documented by Amanda C. Blanco in April 2026.",
+    "filterAll": "All",
+    "filterEsc": "Sculptures",
+    "filterOtr": "Other pieces",
+    "openImage": "Open image",
+    "closeImage": "Close"
+  },
+  "catalog": {
+    "title": "Corpus numbers",
+    "subtitle": "Live figures of the catalogue and project KPIs.",
+    "byCategory": "Distribution by category",
+    "byCertainty": "Certainty level",
+    "byValidation": "Scientific validation status",
+    "kpis": "Main indicators"
+  },
+  "map": {
+    "title": "Map of the Oviedo Nalón",
+    "subtitle": "Sites within the Oviedo concejo and the five Asturian UNESCO caves."
+  },
+  "research": {
+    "title": "State of the art",
+    "subtitle": "Open research on Cantabrian Palaeolithic art, the trilinear hind and the Nalón sites. Data via OpenAlex.",
+    "queries": "Tracked queries",
+    "publications": "Publications per year",
+    "topAuthors": "Most cited authors",
+    "topInstitutions": "Institutions",
+    "openAccess": "Open access",
+    "viewOnOpenalex": "View on OpenAlex",
+    "loading": "Loading data from OpenAlex…",
+    "error": "OpenAlex did not respond. Try again in a few minutes.",
+    "lastUpdated": "Data updated",
+    "methodNote": "Queries combine title, abstract and concepts. Results may include works not exclusive to the Nalón. Use as a panoramic view, not as a closed bibliography."
+  },
+  "resources": {
+    "title": "Resources",
+    "subtitle": "Links, datasets, regulations and bibliography for research, press, teaching and cultural administration.",
+    "categories": {
+      "primary": "Sites and heritage",
+      "europeanArchives": "European archives and aggregators",
+      "standards": "Technical standards",
+      "ecoc": "European Capital of Culture",
+      "biblio": "Bibliography",
+      "media": "Press and communication",
+      "datasets": "Project datasets"
+    }
+  },
+  "commissions": {
+    "title": "Commissions",
+    "lead": "Domingo González de Lena Díaz accepts heritage reproduction commissions: replacements, custom pieces, workshops, donations to schools.",
+    "form": {
+      "name": "Name and surname",
+      "email": "Email",
+      "organization": "Institution (optional)",
+      "type": "Type of commission",
+      "typeOptions": {
+        "reproduction": "Reproduction of an existing piece",
+        "custom": "Custom piece",
+        "workshop": "Workshop / mediation",
+        "loan": "Loan to an educational centre",
+        "other": "Other"
+      },
+      "message": "Description",
+      "deadline": "Desired date (optional)",
+      "consent": "I agree that the Trilineal team contacts me by email to reply to this request.",
+      "submit": "Send request",
+      "sending": "Sending…",
+      "ok": "Request sent. You will receive a reply within five working days.",
+      "error": "There was a problem sending the form. Please try again or write to domingodelena@gmail.com."
+    }
+  },
+  "about": {
+    "title": "About the project",
+    "team": "Team",
+    "committee": "Scientific committee",
+    "committeeBody": "Seven members in formation, one per area: Cantabrian Palaeolithic art, Nalón archaeology, conservation, museography, accessibility, feminist heritage studies and European cultural management.",
+    "ecoc": "Fit with Oviedo 2031",
+    "standards": "Applied standards"
+  },
+  "contact": {
+    "title": "Contact",
+    "lead": "For press, institutions, research and collaboration.",
+    "email": "domingodelena@gmail.com"
+  },
+  "footer": {
+    "rights": "All rights reserved.",
+    "credits": "Reproductions: Domingo González de Lena Díaz · Photography: Amanda C. Blanco · Scientific editing: Pelayo González de Lena Rodríguez",
+    "license": "Descriptive data under CC BY 4.0. Images under CC BY-NC-SA 4.0 (assignment pending)."
+  }
+}

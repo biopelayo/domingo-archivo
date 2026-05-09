@@ -1,0 +1,183 @@
+{
+  "meta": {
+    "title": "Domingo González de Lena Díaz · archivo personal",
+    "description": "Archivo público de Domingo González de Lena Díaz: guarda de campo y caza, cultivador de setas, autor de un proyecto de exposición sobre arte paleolítico asturiano (8 cuevas, 25 piezas), escritos, partituras de canción asturiana."
+  },
+  "nav": {
+    "home": "Inicio",
+    "biografia": "Biografía",
+    "exposicion": "Arte paleolítico",
+    "micologia": "Micología",
+    "escritos": "Escritos",
+    "musica": "Música",
+    "trilineal": "Proyecto Trilineal",
+    "gallery": "Galería",
+    "catalog": "Catálogo",
+    "map": "Mapa",
+    "research": "Investigación",
+    "resources": "Recursos",
+    "commissions": "Encargos",
+    "contact": "Contacto"
+  },
+  "hero": {
+    "kicker": "Archivo personal",
+    "title": "Domingo González de Lena Díaz",
+    "subtitle": "Guarda de campo y caza, cultivador de setas, reproductor de arte paleolítico asturiano.",
+    "lead": "Cinco facetas en un solo archivo: el proyecto expositivo de las 25 piezas en piedra de las cuevas asturianas, los cursos de micología, los escritos breves, la música y la biografía. Editado por su hijo Pelayo González de Lena Rodríguez.",
+    "ctaPrimary": "Conocer al autor",
+    "ctaSecondary": "Ver el corpus de arte"
+  },
+  "stats": {
+    "pieces": "piezas en el proyecto expositivo",
+    "caves": "cuevas asturianas representadas",
+    "courses": "años con cursos de micología",
+    "writings": "escritos publicados"
+  },
+  "manifesto": {
+    "title": "Manifiesto",
+    "lead": "Este sitio recoge cinco caras del archivo personal de Domingo: arte paleolítico, micología, escritos, música y biografía.",
+    "verbs": "Tres verbos rectores del archivo: conservar, hacer accesible y atribuir.",
+    "warning": "Las reproducciones en piedra son obra contemporánea de Domingo. El patrimonio original permanece en las cuevas asturianas y bajo gestión del Principado. Los textos, las clases y la música son suyos."
+  },
+  "exposicion": {
+    "title": "Proyecto expositivo de arte paleolítico asturiano",
+    "subtitle": "25 piezas en piedra que reproducen grabados y pinturas de 8 cuevas. Texto y selección de Domingo González de Lena Díaz.",
+    "objeto": "Divulgación del grabado paleolítico asturiano: una de las primeras formas de pensamiento gráfico de Europa, presente en santuarios que el público no puede visitar de cerca.",
+    "metodo": "Cada cueva tiene un panel con ubicación, fotos, cronología y horizonte cultural. Bajo cada panel, los grabados a altura accesible para niños, adultos y personas con discapacidad.",
+    "fuentes": "Apoyado en Henri Breuil, Conde de la Vega del Sella, Hernández Pacheco, Obermaier, Jordá Cerdá y Fortea Pérez.",
+    "venusTitle": "Venus del cuerno",
+    "venusBody": "Pieza singular del autor, fuera del proyecto expositivo de las 8 cuevas."
+  },
+  "biografia": {
+    "title": "Biografía",
+    "subtitle": "Datos extraídos directamente de los documentos del archivo personal de Domingo.",
+    "tagline": "Guarda de campo y caza, cultivador de setas y hongos comestibles.",
+    "taglineFuente": "Libreto «Iniciación a la micología», 2013",
+    "facetasTitle": "Cinco facetas",
+    "heraldicaTitle": "Heráldica familiar",
+    "contactoTitle": "Contacto artístico",
+    "contactoNota": "Contacto directo con Domingo para reservas y encargos."
+  },
+  "micologia": {
+    "title": "Micología y docencia",
+    "subtitle": "Cursos de iniciación a la micología impartidos por Domingo entre 2013 y 2015.",
+    "libretoTitle": "Libreto «Iniciación a la micología»",
+    "libretoBody": "30+ páginas de texto y fotos: clasificación de hongos, partes del carpóforo, especies comestibles, especies tóxicas, claves de búsqueda y degustación. Autor: Domingo González de Lena Díaz, 2013.",
+    "libretoCta": "Descargar PDF",
+    "cursosTitle": "Cursos impartidos",
+    "setasTitle": "Galería de setas",
+    "setasNota": "60 fotografías representativas. Archivo completo: 4500 imágenes en `02_Micologia/`."
+  },
+  "escritos": {
+    "title": "Escritos",
+    "subtitle": "Ensayos breves de Domingo entre 2014 y 2021. Filosofía, antropología, micología medicinal, espiritualidad, cine.",
+    "verExtracto": "Leer extracto",
+    "fuente": "Fuente"
+  },
+  "musica": {
+    "title": "Música tradicional asturiana",
+    "subtitle": "Partituras propias en MuseScore.",
+    "downloadMscz": "Descargar .mscz",
+    "playerNota": "Para reproducir, abrir con MuseScore o subir a musescore.com.",
+    "presentacionTitle": "Presentación",
+    "presentacionBody": "Carlo Maria Giulini — presentación de Domingo sobre el director de orquesta italiano."
+  },
+  "trilineal": {
+    "title": "Trilineal · módulo institucional ECoC 2031",
+    "subtitle": "Versión digital del proyecto expositivo de Domingo orientada a la candidatura de Oviedo a Capital Europea de la Cultura 2031.",
+    "intro": "Trilineal es la capa de mediación contemporánea, archivo IIIF y dossier institucional construida sobre el proyecto de exposición de Domingo. La cierva trilineal funciona como emblema visual del expediente.",
+    "verDossier": "Ver dossier institucional",
+    "verGaleriaCorpus": "Galería del corpus fotográfico",
+    "verDashboard": "Cifras del corpus",
+    "verMapa": "Mapa del Nalón ovetense",
+    "verInvestigacion": "Estado del arte (OpenAlex)",
+    "verRecursos": "Recursos curados"
+  },
+  "gallery": {
+    "title": "Galería del corpus fotográfico",
+    "subtitle": "120 fotografías Fujifilm X-T4 firmadas por Amanda C. Blanco en abril de 2026, sobre obra de Domingo González de Lena Díaz.",
+    "filterAll": "Todas",
+    "filterEsc": "Esculturas",
+    "filterOtr": "Otras piezas",
+    "openImage": "Abrir imagen",
+    "closeImage": "Cerrar"
+  },
+  "catalog": {
+    "title": "Cifras del corpus",
+    "subtitle": "Números actualizados del proyecto: cuántas piezas hay, en qué estado de catalogación están y qué falta por validar.",
+    "byCategory": "Distribución por categoría",
+    "byCertainty": "Nivel de certeza",
+    "byValidation": "Validación científica de las piezas",
+    "kpis": "Cifras destacadas"
+  },
+  "map": {
+    "title": "Mapa del Nalón ovetense",
+    "subtitle": "Yacimientos del concejo de Oviedo y cinco cuevas asturianas del bien UNESCO."
+  },
+  "research": {
+    "title": "Qué se publica sobre estos temas",
+    "subtitle": "Una mirada en directo a lo que se está escribiendo en la investigación académica sobre las cuevas y los motivos que reproduce Domingo.",
+    "queries": "Búsquedas seguidas",
+    "publications": "Artículos por año",
+    "topAuthors": "Autores más citados",
+    "topInstitutions": "Universidades y centros",
+    "openAccess": "¿Se puede leer gratis?",
+    "viewOnOpenalex": "Ver la búsqueda en OpenAlex",
+    "loading": "Buscando en OpenAlex…",
+    "error": "OpenAlex no contesta ahora. Vuelve a intentarlo en un par de minutos.",
+    "lastUpdated": "Datos actualizados",
+    "methodNote": "Esta página hace cinco búsquedas en OpenAlex (un buscador abierto de artículos científicos parecido a Google Scholar) y trae el conteo de resultados, los seis trabajos más citados, los años en que se publican y las universidades de los autores. Sirve para ver de un vistazo qué se está escribiendo en el mundo académico sobre los temas del archivo de Domingo. Algunos resultados pueden no ser exclusivos del Nalón.",
+    "comoFuncionaTitle": "Cómo funciona esta página",
+    "comoFuncionaBody": "OpenAlex es una base de datos pública con más de 250 millones de artículos científicos. Cada vez que alguien abre esta página, hacemos cinco búsquedas en directo (Pindal, La Lluera, cierva trilineal, etc.) y traemos los resultados. No hay una redacción humana que mantener: los datos se actualizan solos cada 24 horas."
+  },
+  "resources": {
+    "title": "Recursos",
+    "subtitle": "Enlaces, datasets, normativa y bibliografía para investigación, prensa, docencia y administración cultural.",
+    "categories": {
+      "primary": "Yacimientos y patrimonio",
+      "europeanArchives": "Archivos europeos y agregadores",
+      "standards": "Estándares técnicos",
+      "ecoc": "Capitalidad cultural",
+      "biblio": "Bibliografía",
+      "media": "Prensa y comunicación",
+      "datasets": "Datasets propios"
+    }
+  },
+  "commissions": {
+    "title": "Encargos",
+    "lead": "Domingo González de Lena Díaz acepta encargos de reproducción patrimonial: piezas del catálogo, piezas a medida, talleres, donaciones a centros educativos. El contacto directo con Domingo es 662 58 57 98 o domingodelena@gmail.com.",
+    "preciosTitle": "Tabla de precios vigente",
+    "preciosNota": "Lista redactada por el autor. Importes en euros, sin IVA. Piedras pequeñas: 5 €.",
+    "form": {
+      "name": "Nombre y apellidos",
+      "email": "Correo electrónico",
+      "organization": "Institución (opcional)",
+      "type": "Tipo de encargo",
+      "typeOptions": {
+        "reproduction": "Reproducción de pieza del catálogo",
+        "custom": "Pieza a medida",
+        "workshop": "Taller / mediación",
+        "loan": "Préstamo a centro educativo",
+        "other": "Otro"
+      },
+      "message": "Descripción",
+      "deadline": "Fecha deseada (opcional)",
+      "consent": "Acepto que el equipo me contacte por correo para responder a esta solicitud.",
+      "submit": "Enviar solicitud",
+      "sending": "Enviando…",
+      "ok": "Solicitud enviada. Recibirás respuesta en un plazo de cinco días hábiles.",
+      "error": "Hubo un problema al enviar. Inténtalo de nuevo o llama al 662 58 57 98 o escribe a domingodelena@gmail.com."
+    }
+  },
+  "contact": {
+    "title": "Contacto",
+    "lead": "Para prensa, instituciones, investigación, encargos y colaboración.",
+    "encargos": "Encargos: 662 58 57 98 · domingodelena@gmail.com",
+    "edicionEmail": "Coordinación editorial (Pelayo): bio.pelayo@gmail.com"
+  },
+  "footer": {
+    "rights": "Todos los derechos reservados.",
+    "credits": "Obra: Domingo González de Lena Díaz · Edición y archivo digital: Pelayo González de Lena Rodríguez",
+    "license": "Datos descriptivos bajo CC BY 4.0. Fotografías del corpus por Amanda C. Blanco. Imágenes bajo CC BY-NC-SA 4.0 (cesión pendiente)."
+  }
+}
