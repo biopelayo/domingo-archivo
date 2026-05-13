@@ -34,23 +34,9 @@ export default function ContactPage() {
         </div>
 
         <div className="card mt-4">
-          <p className="kicker mb-2" style={{ color: "var(--pel-warm)" }}>Coordinación editorial y archivo digital</p>
-          <p className="text-lg" style={{ fontWeight: 700, color: "var(--pel-green)" }}>
-            Pelayo González de Lena Rodríguez
-          </p>
-          <p className="text-sm mt-1" style={{ color: "var(--pel-ink-soft)" }}>
-            Hijo del autor. Coordina la digitalización del archivo y el dossier institucional.
-          </p>
-          <p className="mt-1 flex items-center gap-2">
-            <Mail size={16} style={{ color: "var(--pel-warm)" }} />
-            <a href="mailto:bio.pelayo@gmail.com">bio.pelayo@gmail.com</a>
-          </p>
-        </div>
-
-        <div className="card mt-4">
           <p className="kicker mb-2" style={{ color: "var(--pel-warm)" }}>Prensa, instituciones e investigación</p>
           <p className="text-sm" style={{ color: "var(--pel-ink-soft)" }}>
-            Para entrevistas, peticiones de imagen y propuestas de colaboración con el proyecto Trilineal de cara a la candidatura de Oviedo a Capital Europea de la Cultura 2031, escribir al correo de Pelayo.
+            Para entrevistas, peticiones de imagen y propuestas de colaboración con el proyecto Trilineal en torno a la candidatura de Oviedo a Capital Europea de la Cultura 2031, escribe a Domingo al teléfono o correo de arriba.
           </p>
           <Link href="/trilineal" className="btn btn-ghost mt-3 inline-flex" style={{ fontSize: "0.85rem" }}>
             Ir al proyecto Trilineal

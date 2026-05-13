@@ -19,9 +19,7 @@ export const metadata: Metadata = {
   description:
     "Archivo personal de Domingo González de Lena Díaz: guarda de campo y caza, cultivador de setas, autor de un proyecto de exposición sobre arte paleolítico asturiano. Encargos directos: 662 58 57 98 · domingodelena@gmail.com.",
   authors: [
-    { name: "Domingo González de Lena Díaz (autor)" },
-    { name: "Pelayo González de Lena Rodríguez (coordinación editorial)" },
-    { name: "Amanda C. Blanco (fotografía del corpus)" },
+    { name: "Domingo González de Lena Díaz" },
   ],
   keywords: [
     "Domingo González de Lena",
@@ -37,7 +35,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Domingo González de Lena · archivo personal",
     description:
-      "Cinco facetas en un solo archivo: arte paleolítico, micología, escritos, música y biografía. Encargos directos.",
+      "Cuatro facetas en un solo archivo: arte paleolítico, micología, videos y biografía. Encargos directos.",
     type: "website",
     locale: "es_ES",
   },

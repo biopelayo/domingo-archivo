@@ -64,7 +64,7 @@ export default function CorpusDashboard({ pieces, kpis }: { pieces: Piece[]; kpi
   };
 
   const kpiCards: { label: string; value: string; icon: React.ReactNode }[] = [
-    { label: "Piezas en el corpus", value: totals.pieces.toString(), icon: <Layers size={18} /> },
+    { label: "Piezas del corpus", value: totals.pieces.toString(), icon: <Layers size={18} /> },
     { label: "Esculturas", value: totals.sculptures.toString(), icon: <ImageIcon size={18} /> },
     { label: "Resolución media (px)", value: totals.avgRes.toLocaleString("es-ES"), icon: <Globe2 size={18} /> },
     { label: "Pendientes de validación", value: totals.pending.toString(), icon: <ShieldCheck size={18} /> },

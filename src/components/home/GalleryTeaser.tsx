@@ -25,7 +25,7 @@ export default async function GalleryTeaser() {
             </h2>
             <div className="h-divider" />
           </div>
-          <Link href="/galeria/corpus" className="btn btn-primary">Ver el corpus completo</Link>
+          <Link href="/galeria/corpus" className="btn btn-primary">Ver el corpus entero</Link>
         </div>
 
         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-3">

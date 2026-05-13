@@ -43,8 +43,7 @@ export default function Footer() {
             <li><Link href="/biografia">{tNav("biografia")}</Link></li>
             <li><Link href="/exposicion">{tNav("exposicion")}</Link></li>
             <li><Link href="/micologia">{tNav("micologia")}</Link></li>
-            <li><Link href="/escritos">{tNav("escritos")}</Link></li>
-            <li><Link href="/musica">{tNav("musica")}</Link></li>
+            <li><Link href="/videos">{tNav("videos")}</Link></li>
             <li><Link href="/encargos">{tNav("commissions")}</Link></li>
           </ul>
         </div>
@@ -53,7 +52,7 @@ export default function Footer() {
           <p className="kicker mb-3">Proyecto Trilineal (ECoC 2031)</p>
           <ul className="space-y-1.5 text-sm" style={{ color: "var(--pel-ink-soft)" }}>
             <li><Link href="/trilineal">{tNav("trilineal")}</Link></li>
-            <li><Link href="/galeria">{tNav("gallery")}</Link></li>
+            <li><Link href="/galeria/corpus">{tNav("gallery")}</Link></li>
             <li><Link href="/catalogo">{tNav("catalog")}</Link></li>
             <li><Link href="/mapa">{tNav("map")}</Link></li>
             <li><Link href="/investigacion">{tNav("research")}</Link></li>

@@ -123,9 +123,9 @@ export default function ResourcesPage() {
         <div className="mt-12">
           <p className="kicker mb-2">Próximamente</p>
           <ul className="lead space-y-2 list-disc pl-6">
-            <li>Carpeta de prensa pre-empaquetada (8 imágenes icónicas + textos cortos ES/EN).</li>
-            <li>Catálogo razonado en PDF descargable.</li>
-            <li>Modelos 3D fotogramétricos navegables (8 piezas icónicas).</li>
+            <li>Carpeta de prensa lista para descargar: 8 imágenes y textos cortos en ES y EN.</li>
+            <li>Catálogo razonado en PDF.</li>
+            <li>Modelos 3D fotogramétricos navegables de 8 piezas.</li>
             <li>Materiales escolares en lectura fácil para Primaria y ESO.</li>
           </ul>
         </div>

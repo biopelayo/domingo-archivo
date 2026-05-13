@@ -1,15 +1,14 @@
 {
   "meta": {
     "title": "Domingo González de Lena Díaz · personal archive",
-    "description": "Public archive of Domingo González de Lena Díaz: countryside and game warden, mushroom grower, author of an exhibition project on Asturian Palaeolithic art (8 caves, 25 pieces), writings and Asturian song scores."
+    "description": "Public archive of Domingo González de Lena Díaz: countryside and game warden, mushroom grower, author of the exhibition project on Asturian Palaeolithic art (25 stone pieces, 8 caves), television appearances and Asturian song scores."
   },
   "nav": {
     "home": "Home",
     "biografia": "Biography",
     "exposicion": "Palaeolithic art",
     "micologia": "Mycology",
-    "escritos": "Writings",
-    "musica": "Music",
+    "videos": "Videos",
     "trilineal": "Trilineal project",
     "gallery": "Gallery",
     "catalog": "Numbers",
@@ -25,7 +24,7 @@
     "kicker": "Personal archive",
     "title": "Domingo González de Lena Díaz",
     "subtitle": "Countryside and game warden, mushroom grower, reproducer of Asturian Palaeolithic art.",
-    "lead": "Five facets in one archive: the exhibition project of 25 stone pieces from Asturian caves, the mycology courses, the short writings, the music and the biography. Edited by his son Pelayo González de Lena Rodríguez.",
+    "lead": "Four facets in one archive: 25 stone pieces from Asturian caves, the mycology courses, the television appearances and the biography.",
     "ctaPrimary": "Meet the author",
     "ctaSecondary": "See the art corpus"
   },
@@ -37,14 +36,14 @@
   },
   "manifesto": {
     "title": "Manifesto",
-    "lead": "The project turns Domingo González de Lena Díaz's sculptural corpus into a public-access infrastructure to the Palaeolithic engraving of the Nalón.",
-    "verbs": "Three guiding verbs: reproduce, symbolically preserve, democratise.",
-    "warning": "Reproductions work as tools of interpretation, education and tactile accessibility. The original heritage stays in the caves. The trilinear hind is treated as a proposed visual emblem, with the caution the bibliography demands."
+    "lead": "The site collects four faces of Domingo González de Lena Díaz's personal archive: Palaeolithic art, mycology, videos and biography.",
+    "verbs": "Three verbs guide the archive: preserve, give access, attribute.",
+    "warning": "The stone reproductions are Domingo's contemporary work. The original heritage stays in the Asturian caves, under the management of the Principado. The texts, classes and music are his."
   },
   "cierva": {
     "title": "The trilinear hind",
-    "lead": "Three lines linking origin, community and future.",
-    "body": "The term describes a recurring graphic treatment in the Franco-Cantabrian region: three parallel strokes that delimit the silhouette of the cervid. The project takes the motif as a curatorial and communicative emblem, and records the open scientific debate in its catalogue and bibliography."
+    "lead": "Three parallel strokes that delimit the silhouette of the cervid.",
+    "body": "The term names a recurring graphic treatment in the Franco-Cantabrian region: three parallel strokes that delimit the silhouette of the cervid. The project uses the motif as a visual emblem and records the open scientific debate in its catalogue and bibliography."
   },
   "biografia": {
     "titulo": "Biography",
@@ -59,30 +58,45 @@
     "para_saber_mas_titulo": "Read more",
     "para_saber_mas_intro": "The other sections of the archive expand each facet with pieces, prices and contact routes."
   },
+  "micologia": {
+    "title": "Mycology and teaching",
+    "subtitle": "Introductory mycology courses taught by Domingo in Oviedo between 2013 and 2015.",
+    "libretoTitle": "Booklet «Iniciación a la micología»",
+    "libretoBody": "30 pages written by Domingo in 2013 for his Oviedo courses: classification of fungi, parts of the fruiting body, edible and toxic species, search keys and tasting notes.",
+    "libretoCta": "Download PDF",
+    "cursosTitle": "Courses taught",
+    "setasTitle": "Mushroom gallery",
+    "setasNota": "Selected photographs from the personal archive.",
+    "galeria": {
+      "titulo": "Mushroom gallery",
+      "subtitulo": "150 photographs from Domingo's personal archive, grouped by context.",
+      "filtroAll": "All",
+      "filtroEspecies": "Identified species",
+      "filtroRecolecciones": "Foraging trips",
+      "filtroCatalogo": "Catalogue",
+      "filtroCampo": "Field",
+      "filtroCurso": "Course",
+      "buscar": "Search by species or file name…",
+      "contadorFmt": "{n} of {total}"
+    }
+  },
+  "videos": {
+    "titulo": "Videos",
+    "subtitulo": "Domingo's television appearances and audiovisual material from the family archive.",
+    "placeholder": "The videos in this section are being recovered from the programme archive. They will appear here when available. If you have any and want to share them, write to domingodelena@gmail.com.",
+    "duracion": "Duration",
+    "fechaEmision": "Broadcast",
+    "aportar": "Contribute a video",
+    "cerrar": "Close video"
+  },
   "gallery": {
     "title": "Gallery",
-    "subtitle": "Sculptural corpus photographically documented by Amanda C. Blanco in April 2026.",
+    "subtitle": "120 Fujifilm X-T4 photographs taken by Amanda C. Blanco in April 2026 on work by Domingo González de Lena Díaz.",
     "filterAll": "All",
     "filterEsc": "Sculptures",
     "filterOtr": "Other pieces",
     "openImage": "Open image",
     "closeImage": "Close"
-  },
-  "personalGallery": {
-    "kicker": "Personal archive",
-    "title": "Personal archive gallery",
-    "subtitle": "A selection of photographs Domingo has kept over the years: the trip to Naples, the Pravia season and older items from the family archive.",
-    "filterAll": "All",
-    "filterChrono": "Chronological",
-    "filterField": "Domingo in the field",
-    "filterTravel": "Travel",
-    "openImage": "Open image",
-    "closeImage": "Close image",
-    "prev": "Previous image",
-    "next": "Next image",
-    "creditLine": "Personal archive of Domingo González de Lena Díaz. Reproduction only with the author's permission.",
-    "corpusNote": "Looking for the sculptural corpus gallery photographed by Amanda C. Blanco?",
-    "corpusLink": "Open the corpus gallery"
   },
   "catalog": {
     "title": "Corpus numbers",
@@ -98,7 +112,7 @@
   },
   "research": {
     "title": "Recent publications",
-    "subtitle": "Open research on Cantabrian Palaeolithic art, the trilinear hind and the Nalón sites. Data via OpenAlex.",
+    "subtitle": "Live data from OpenAlex on Cantabrian Palaeolithic art, the trilinear hind and the Nalón sites.",
     "queries": "Tracked queries",
     "publications": "Publications per year",
     "topAuthors": "Most cited authors",
@@ -125,7 +139,7 @@
   },
   "eventos": {
     "title": "Events",
-    "subtitle": "Exhibitions, talks and activities by Domingo González de Lena. This page updates with every confirmation.",
+    "subtitle": "Exhibitions, talks and activities by Domingo González de Lena. The page updates with every confirmation.",
     "actualizado": "Last update",
     "subscribe": "Subscribe to calendar",
     "contact": "Get in touch about a venue",
@@ -146,7 +160,7 @@
       "sede": "Venue or institution",
       "ciudad": "City",
       "fechas": "Proposed dates",
-      "fechasPlaceholder": "e.g. October 2026, or 5–25 November",
+      "fechasPlaceholder": "e.g. October 2026, or 5 to 25 November",
       "mensaje": "Message",
       "submitEmail": "Send via email",
       "submitWhatsapp": "Send via WhatsApp",
@@ -164,7 +178,7 @@
       "email": "domingodelena@gmail.com",
       "destacados": {
         "title": "Pieces available now",
-        "lead": "Fifteen selected pieces from the catalogue, with photo and price. To reserve one, a WhatsApp message is enough.",
+        "lead": "Fifteen pieces chosen from the catalogue, with photo and price. To reserve one, a WhatsApp message is enough.",
         "fichasNota": "The descriptions are being written together with Domingo. For now we show reference, photo and price.",
         "ctaReservar": "Reserve piece",
         "refLabel": "Reference"
@@ -187,7 +201,7 @@
           },
           "publico": {
             "title": "Public space and monument",
-            "body": "Squares, parks and roundabouts. Domingo has produced monumental pieces on municipal commission."
+            "body": "Squares, parks and roundabouts. Domingo has made monumental pieces on municipal commission."
           },
           "coleccion": {
             "title": "Private collection",
@@ -350,12 +364,12 @@
   },
   "contact": {
     "title": "Contact",
-    "lead": "For press, institutions, research and collaboration.",
+    "lead": "For reservations, commissions, press, institutions and research.",
     "email": "domingodelena@gmail.com"
   },
   "footer": {
     "rights": "All rights reserved.",
-    "credits": "Reproductions: Domingo González de Lena Díaz · Photography: Amanda C. Blanco · Scientific editing: Pelayo González de Lena Rodríguez",
+    "credits": "Work by Domingo González de Lena Díaz · Corpus photography: Amanda C. Blanco.",
     "license": "Descriptive data under CC BY 4.0. Images under CC BY-NC-SA 4.0 (assignment pending)."
   }
 }

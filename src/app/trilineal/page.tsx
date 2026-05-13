@@ -8,9 +8,9 @@ export const metadata: Metadata = { title: "Proyecto Trilineal · ECoC 2031" };
 const ENLACES = [
   { href: "/galeria/corpus", labelKey: "verGaleriaCorpus", body: "120 fotografías Fujifilm X-T4 sobre obra de Domingo." },
   { href: "/catalogo", labelKey: "verDashboard", body: "Cuántas piezas hay, en qué estado de catalogación están y cuáles ya están validadas." },
-  { href: "/mapa", labelKey: "verMapa", body: "Yacimientos del concejo de Oviedo + UNESCO Asturias." },
-  { href: "/investigacion", labelKey: "verInvestigacion", body: "Qué se está publicando ahora mismo en el mundo académico sobre arte paleolítico cantábrico, cierva trilineal y los yacimientos del Nalón." },
-  { href: "/recursos", labelKey: "verRecursos", body: "Enlaces seleccionados, datasets, BibTeX." },
+  { href: "/mapa", labelKey: "verMapa", body: "Yacimientos del concejo de Oviedo y cuevas UNESCO de Asturias." },
+  { href: "/investigacion", labelKey: "verInvestigacion", body: "Qué se está publicando ahora en el mundo académico sobre arte paleolítico cantábrico, cierva trilineal y los yacimientos del Nalón." },
+  { href: "/recursos", labelKey: "verRecursos", body: "Enlaces elegidos, datasets, BibTeX." },
 ];
 
 function TriHeader() {
@@ -51,7 +51,7 @@ export default function TrilinealPage() {
         <div className="card mt-10">
           <p className="kicker mb-2">Dossier institucional (Quarto)</p>
           <p className="lead" style={{ fontSize: "0.95rem" }}>
-            Carta institucional, one-pager, dossier corto, dossier técnico, catálogo razonado, deck 12 slides y paper-like report en inglés. Compilan a HTML, PDF y revealjs desde fuentes versionables.
+            Carta institucional, one-pager, dossier corto, dossier técnico, catálogo razonado, deck de 12 slides y paper-like report en inglés. Compilan a HTML, PDF y revealjs desde fuentes versionables.
           </p>
           <p className="mt-2 text-sm" style={{ color: "var(--pel-muted)" }}>
             Repositorio: <code>D:\Antigravity\proyecto-domingo\01_dossier\</code>

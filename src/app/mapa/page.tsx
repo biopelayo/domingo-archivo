@@ -36,7 +36,7 @@ export default function MapPage() {
           </div>
           <div className="card">
             <p className="kicker mb-1" style={{ color: "var(--pel-warm)" }}>Oviedo / Uviéu</p>
-            <p style={{ color: "var(--pel-ink-soft)" }}>Punto de referencia urbano del proyecto.</p>
+            <p style={{ color: "var(--pel-ink-soft)" }}>Referencia urbana del proyecto.</p>
           </div>
         </div>
       </div>

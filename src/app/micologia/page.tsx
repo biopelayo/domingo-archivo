@@ -6,6 +6,8 @@ import { Download, Calendar, BookOpen } from "lucide-react";
 import { useTranslations } from "next-intl";
 
 import DomingoBubbles from "@/components/ui/DomingoBubbles";
+import SetasGallery, { type Seta } from "@/components/micologia/SetasGallery";
+import { withBasePath } from "@/lib/basePath";
 
 export const metadata: Metadata = { title: "Micología y docencia" };
 
@@ -15,11 +17,12 @@ const CURSOS = [
   { ano: 2015, lugar: "Oviedo", material: "Cartel curso 2015" },
 ];
 
-async function listSetas(): Promise<string[]> {
+async function loadSetas(): Promise<Seta[]> {
   try {
-    const dir = path.join(process.cwd(), "public", "micologia", "setas");
-    const files = await fs.readdir(dir);
-    return files.filter((f) => /\.jpe?g$/i.test(f)).sort().map((f) => `/micologia/setas/${f}`);
+    const file = path.join(process.cwd(), "public", "data", "setas.json");
+    const raw = await fs.readFile(file, "utf-8");
+    const data = JSON.parse(raw) as { fotos?: Seta[] };
+    return Array.isArray(data.fotos) ? data.fotos : [];
   } catch {
     return [];
   }
@@ -37,8 +40,20 @@ function MicHeader() {
   );
 }
 
+function GaleriaHeader() {
+  const t = useTranslations("micologia.galeria");
+  return (
+    <>
+      <h2 className="text-2xl font-bold mt-12" style={{ color: "var(--pel-green)" }}>
+        {t("titulo")}
+      </h2>
+      <p className="lead mt-2" style={{ fontSize: "0.92rem" }}>{t("subtitulo")}</p>
+    </>
+  );
+}
+
 export default async function MicologiaPage() {
-  const setas = await listSetas();
+  const setas = await loadSetas();
   return (
     <section className="section relative overflow-hidden">
       <DomingoBubbles theme="mushroom" count={26} giant />
@@ -54,23 +69,24 @@ export default async function MicologiaPage() {
               «Iniciación a la micología»
             </h2>
             <p className="lead mt-2" style={{ fontSize: "0.95rem" }}>
-              30+ páginas: clasificación de hongos, partes del carpóforo, especies comestibles, especies tóxicas, claves de búsqueda y degustación. Autor: Domingo González de Lena Díaz, 2013.
+              Libreto de 30 páginas escrito por Domingo en 2013 para sus cursos en Oviedo. Cubre clasificación de hongos, partes del carpóforo, especies comestibles y tóxicas, y claves de búsqueda y degustación.
             </p>
             <p className="mt-3 text-sm" style={{ color: "var(--pel-ink-soft)" }}>
-              Subtítulo del propio libreto: «Algunas claves para la búsqueda, recolección, reconocimiento y degustación de las setas».
+              Subtítulo del libreto: «Algunas claves para la búsqueda, recolección, reconocimiento y degustación de las setas».
             </p>
             <a
-              href="/micologia/libreto-iniciacion-micologia.pdf"
+              href={withBasePath("/micologia/libreto-iniciacion-micologia.pdf")}
               target="_blank"
               rel="noreferrer"
               className="btn btn-primary mt-5 inline-flex"
+              style={{ background: "var(--pel-warm)", color: "#fff", borderColor: "var(--pel-warm)" }}
             >
               <Download size={16} /> Descargar PDF
             </a>
           </div>
           <div className="card">
             <Image
-              src="/micologia/libreto-portada.jpg"
+              src={withBasePath("/micologia/libreto-portada.jpg")}
               alt="Portada del libreto"
               width={400}
               height={560}
@@ -98,23 +114,9 @@ export default async function MicologiaPage() {
 
         {setas.length > 0 && (
           <>
-            <h2 className="text-2xl font-bold mt-12" style={{ color: "var(--pel-green)" }}>Galería de setas</h2>
-            <p className="lead mt-2" style={{ fontSize: "0.92rem" }}>
-              {setas.length} fotografías de la colección de Domingo (subset de las 4500 imágenes en `02_Micologia/`).
-            </p>
-            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-2 mt-4">
-              {setas.map((src, i) => (
-                <div key={src} className="card p-0 overflow-hidden" style={{ aspectRatio: "1", borderRadius: 8 }}>
-                  <Image
-                    src={src}
-                    alt={`Seta ${i + 1}`}
-                    width={300}
-                    height={300}
-                    sizes="(max-width: 640px) 50vw, 20vw"
-                    style={{ width: "100%", height: "100%", objectFit: "cover" }}
-                  />
-                </div>
-              ))}
+            <GaleriaHeader />
+            <div className="mt-6">
+              <SetasGallery setas={setas} />
             </div>
           </>
         )}

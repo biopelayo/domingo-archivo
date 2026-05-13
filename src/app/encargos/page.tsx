@@ -620,8 +620,7 @@ export default async function CommissionsPage() {
           Solicitud por escrito
         </h2>
         <p className="lead mt-3" style={{ fontSize: "0.95rem" }}>
-          Si prefieres dejar la solicitud registrada por correo, puedes usar este formulario en
-          lugar de WhatsApp.
+          Si prefieres dejar la solicitud por correo, puedes usar este formulario en lugar de WhatsApp.
         </p>
         <CommissionsForm />
 

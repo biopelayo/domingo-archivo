@@ -71,17 +71,17 @@ export const RESOURCE_CATEGORIES: ResourceCategory[] = [
       {
         title: "Europeana",
         href: "https://www.europeana.eu/",
-        description: "Agregador europeo de patrimonio cultural digital. Receptor objetivo del archivo Trilineal vía EDM.",
+        description: "Agregador europeo de patrimonio cultural digital. Destino del archivo Trilineal vía EDM.",
       },
       {
         title: "Europeana Data Model · documentación",
         href: "https://pro.europeana.eu/page/edm-documentation",
-        description: "Especificación EDM para descripción de objetos culturales agregables a Europeana.",
+        description: "Especificación EDM para describir objetos culturales agregables a Europeana.",
       },
       {
         title: "Hispana",
         href: "https://hispana.mcu.es/",
-        description: "Agregador estatal español de archivos y bibliotecas digitales. Puente nacional a Europeana.",
+        description: "Agregador estatal de archivos y bibliotecas digitales. Conecta los registros españoles con Europeana.",
         source: "Ministerio de Cultura",
       },
       {
@@ -93,7 +93,7 @@ export const RESOURCE_CATEGORIES: ResourceCategory[] = [
       {
         title: "OpenAlex",
         href: "https://openalex.org/",
-        description: "Grafo abierto de publicaciones, autores e instituciones. Base de la sección de investigación.",
+        description: "Grafo abierto de publicaciones, autores e instituciones. Alimenta la sección de investigación.",
       },
     ],
   },
@@ -114,7 +114,7 @@ export const RESOURCE_CATEGORIES: ResourceCategory[] = [
       {
         title: "Dublin Core Metadata Initiative",
         href: "https://www.dublincore.org/",
-        description: "Vocabulario de metadatos descriptivos. Núcleo del registro de cada pieza del corpus.",
+        description: "Vocabulario de metadatos descriptivos. Cada pieza del corpus se describe en Dublin Core.",
       },
       {
         title: "WCAG 2.2",
@@ -125,7 +125,7 @@ export const RESOURCE_CATEGORIES: ResourceCategory[] = [
       {
         title: "Creative Commons BY-NC-SA 4.0",
         href: "https://creativecommons.org/licenses/by-nc-sa/4.0/",
-        description: "Licencia por defecto de las imágenes del proyecto, sujeta a la cesión final.",
+        description: "Licencia por defecto de las imágenes del proyecto. Sujeta a la cesión final.",
       },
     ],
   },
@@ -163,12 +163,12 @@ export const RESOURCE_CATEGORIES: ResourceCategory[] = [
       {
         title: "Búsqueda Dialnet · arte paleolítico cantábrico",
         href: "https://dialnet.unirioja.es/servlet/listaarticulos?tipo_busqueda=MATERIAS&clave_busqueda=arte%20paleol%C3%ADtico%20cant%C3%A1brico",
-        description: "Filtro temático sobre Dialnet para bibliografía en español sobre el ámbito.",
+        description: "Filtro temático sobre Dialnet para bibliografía en español del ámbito.",
       },
       {
         title: "Zotero · grupo público sobre arte paleolítico cantábrico",
         href: "https://www.zotero.org/search/?q=cantabrian+palaeolithic+art&type=group",
-        description: "Grupos de Zotero relacionados. Útil para mantener bibliografía compartida.",
+        description: "Grupos de Zotero relacionados. Útil para compartir bibliografía.",
       },
       {
         title: "Bibliografía completa del proyecto (BibTeX)",
@@ -183,7 +183,7 @@ export const RESOURCE_CATEGORIES: ResourceCategory[] = [
     i18nKey: "media",
     links: [
       {
-        title: "Carpeta de prensa · imágenes seleccionadas",
+        title: "Carpeta de prensa · imágenes elegidas",
         href: "/galeria/corpus",
         description: "Selección de fotografías de Amanda C. Blanco. Crédito obligatorio en cada imagen.",
         source: "Trilineal · este sitio",

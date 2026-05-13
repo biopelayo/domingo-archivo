@@ -12,7 +12,7 @@ export default function NotFound() {
         <h1 className="headline">Página no encontrada</h1>
         <div className="h-divider mx-auto" />
         <p className="lead mt-4 mx-auto">
-          La página que buscas no existe o fue movida. Vuelve al inicio o usa el menú.
+          La página que buscas no existe o ha cambiado de dirección. Vuelve al inicio o usa el menú.
         </p>
         <Link href="/" className="btn btn-primary mt-6 inline-flex">Volver al inicio</Link>
       </div>

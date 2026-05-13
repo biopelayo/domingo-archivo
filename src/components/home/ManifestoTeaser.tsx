@@ -19,7 +19,7 @@ export default function ManifestoTeaser() {
           <p className="lead">{t("verbs")}</p>
           <p className="lead">{t("warning")}</p>
           <Link href="/manifesto" className="btn btn-ghost mt-3">
-            Leer el manifiesto completo <ArrowUpRight size={16} />
+            Leer el manifiesto entero <ArrowUpRight size={16} />
           </Link>
         </div>
       </div>

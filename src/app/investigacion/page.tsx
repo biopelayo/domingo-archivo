@@ -17,7 +17,7 @@ import OaSplit from "@/components/research/OaSplit";
 export const metadata: Metadata = {
   title: "Qué se publica sobre estos temas",
   description:
-    "Una mirada en directo a la investigación académica sobre arte paleolítico cantábrico, cierva trilineal y los yacimientos del Nalón.",
+    "Datos en directo sobre la investigación académica de arte paleolítico cantábrico, cierva trilineal y los yacimientos del Nalón.",
 };
 
 // Export estático: los datos de OpenAlex se descargan en build time.
@@ -83,7 +83,7 @@ function QuerySection({ bundle }: { bundle: QueryBundle }) {
           <div>
             <p className="font-bold">OpenAlex no respondió a esta búsqueda.</p>
             <p className="text-xs" style={{ color: "var(--pel-muted)" }}>
-              Vuelve a cargar la página dentro de un par de minutos.
+              Vuelve a cargar la página en un par de minutos.
             </p>
           </div>
         </div>
@@ -124,7 +124,7 @@ function QuerySection({ bundle }: { bundle: QueryBundle }) {
           <div className="grid lg:grid-cols-2 gap-4">
             <div className="card">
               <div className="flex items-center gap-2 text-sm mb-3" style={{ color: "var(--pel-warm)" }}>
-                <FileText size={16} /> <span style={{ fontWeight: 600 }}>Los seis artículos más citados</span>
+                <FileText size={16} /> <span style={{ fontWeight: 600 }}>Seis artículos más citados</span>
               </div>
               <ol className="space-y-3">
                 {topWorks.length === 0 && <li className="text-sm" style={{ color: "var(--pel-muted)" }}>Sin resultados.</li>}
@@ -199,11 +199,11 @@ export default async function ResearchPage() {
         </div>
 
         <div className="mt-16">
-          <p className="kicker mb-2">Y de aquí a dónde</p>
+          <p className="kicker mb-2">Y de aquí, a dónde</p>
           <ul className="lead space-y-2 list-disc pl-6">
-            <li>Cuando salga un artículo nuevo en alguno de estos temas, aparecerá aquí solo, sin tocar nada.</li>
-            <li>Si quieres leer alguno, pincha en el título: te llevará al PDF abierto si lo hay, o a su DOI.</li>
-            <li>Para guardar la bibliografía completa en Zotero, ve a la página de recursos.</li>
+            <li>Cuando salga un artículo nuevo sobre alguno de estos temas, aparecerá aquí solo, sin tocar nada.</li>
+            <li>Si quieres leer alguno, pincha en el título: te lleva al PDF abierto si lo hay, o al DOI.</li>
+            <li>Para guardar la bibliografía entera en Zotero, ve a la página de recursos.</li>
           </ul>
           <p className="mt-6">
             <Link href="/recursos" className="btn btn-ghost">Ir a recursos seleccionados</Link>

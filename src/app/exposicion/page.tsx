@@ -80,7 +80,7 @@ export default async function ExposicionPage() {
           <div className="card">
             <p className="kicker mb-1" style={{ color: "var(--pel-warm)" }}>Piezas</p>
             <p style={{ color: "var(--pel-green)", fontWeight: 700, fontSize: "2rem", lineHeight: 1.05 }}>{totalPiezas}</p>
-            <p className="text-sm" style={{ color: "var(--pel-ink-soft)" }}>en piedra, exposicion completa</p>
+            <p className="text-sm" style={{ color: "var(--pel-ink-soft)" }}>en piedra, exposición entera</p>
           </div>
         </div>
 
@@ -144,7 +144,7 @@ export default async function ExposicionPage() {
 
         <h2 className="text-2xl font-bold mt-12" style={{ color: "var(--pel-green)" }}>Estudios de referencia</h2>
         <p className="lead mt-2">
-          El proyecto se apoya en investigaciones de:
+          Domingo trabaja con la bibliografía de:
         </p>
         <ul className="grid sm:grid-cols-2 gap-x-6 gap-y-1 mt-2 list-disc pl-6">
           {data.estudios_referencia.map((a) => (

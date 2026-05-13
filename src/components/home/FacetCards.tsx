@@ -3,20 +3,20 @@ import { ArrowUpRight } from "lucide-react";
 
 const FACETS = [
   { href: "/biografia", title: "Biografía", body: "Datos profesionales, perfil archivado, escudos heráldicos y contacto artístico." },
-  { href: "/exposicion", title: "Arte paleolítico", body: "25 piezas en 8 cuevas asturianas, con apoyo en Breuil, Vega del Sella, Fortea." },
-  { href: "/micologia", title: "Micología y docencia", body: "Cursos de iniciación 2013–2015, libreto propio de 30+ páginas y galería de setas." },
-  { href: "/escritos", title: "Escritos", body: "Filosofía, antropología (Malinowski), micología medicinal (KEFRU), Woody Allen, espiritualidad." },
-  { href: "/musica", title: "Música", body: "Partituras propias en MuseScore: «Cuando te vín la fonte», «No vengas a deshora galán a verme»." },
-  { href: "/trilineal", title: "Proyecto Trilineal · ECoC 2031", body: "Capa institucional digital construida sobre el corpus expositivo, con archivo IIIF y dossier." },
+  { href: "/exposicion", title: "Arte paleolítico", body: "25 piezas en 8 cuevas asturianas. Bibliografía de Breuil, Vega del Sella y Fortea." },
+  { href: "/micologia", title: "Micología y docencia", body: "Cursos de iniciación 2013–2015, libreto propio de 30 páginas y galería de setas." },
+  { href: "/videos", title: "Videos", body: "Apariciones de Domingo en televisión y material audiovisual del archivo." },
+  { href: "/encargos", title: "Encargos", body: "Piezas disponibles, precios reales, plazos honestos y contacto directo con el taller." },
+  { href: "/trilineal", title: "Proyecto Trilineal · ECoC 2031", body: "Capa institucional digital del corpus expositivo: archivo IIIF y dossier." },
 ];
 
 export default function FacetCards() {
   return (
     <section className="section">
       <div className="container-page">
-        <p className="kicker mb-2">Cinco facetas y un proyecto institucional</p>
+        <p className="kicker mb-2">Cuatro facetas y un proyecto institucional</p>
         <h2 className="headline" style={{ fontSize: "clamp(1.6rem, 3vw, 2.4rem)" }}>
-          Cómo recorrer este archivo
+          Por dónde empezar
         </h2>
         <div className="h-divider" />
         <div className="grid gap-4 mt-6 sm:grid-cols-2 lg:grid-cols-3">

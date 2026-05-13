@@ -52,7 +52,7 @@ function getConfig(cat?: string): CategoriaConfig {
 
 export default function Timeline({ items }: { items: TimelineItem[] }) {
   return (
-    <ol className="relative mt-6" aria-label="Cronología de hitos">
+    <ol className="relative mt-6" aria-label="Cronología">
       {/* Línea vertical conectora */}
       <div
         aria-hidden

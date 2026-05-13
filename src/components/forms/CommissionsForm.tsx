@@ -115,7 +115,7 @@ export default function CommissionsForm() {
         </a>
         {status === "ok" && (
           <span style={{ color: "var(--pel-green)", fontSize: "0.9rem" }}>
-            Se ha abierto tu cliente de correo con la solicitud preparada.
+            Se abrió tu cliente de correo con la solicitud preparada.
           </span>
         )}
         {status === "error" && (
