@@ -19,27 +19,9 @@
     "02_Micologia/Cursos_Domingo/INICIACION 2014.docx",
     "06_Documentos_Personales/Filosofia_y_Trabajos/KEFRU EL HEMOSTÁTICO.docx"
   ],
-  "fuentes_excluidas_pelayo": [
-    "03_Academico/Becas_y_CV/cv.pdf",
-    "03_Academico/Becas_y_CV/CV_otro.pdf",
-    "03_Academico/Becas_y_CV/CVN.pdf",
-    "03_Academico/Becas_y_CV/CV AND.pdf",
-    "03_Academico/Becas_y_CV/Pelayo.pdf",
-    "03_Academico/Becas_y_CV/PELAYO GONZALEZ DE LENA RODRIGUEZ.doc",
-    "03_Academico/Becas_y_CV/Europass-CV-120222-GonzálezDeLenaRodriguez (3).pdf",
-    "03_Academico/Becas_y_CV/curriculum.doc",
-    "03_Academico/Becas_y_CV/CURRICULUM VITAE VERANO.doc",
-    "03_Academico/Becas_y_CV/CV.doc",
-    "03_Academico/Becas_y_CV/CV ING.doc",
-    "03_Academico/Becas_y_CV/curriculum_basico.doc"
-  ],
-  "fuentes_excluidas_otros": [
-    "03_Academico/Becas_y_CV/Europass actualizado english.pdf [pertenece a Luis Palicio Sanz, amigo del usuario]"
-  ],
   "fuentes_no_legibles": [
     "06_Documentos_Personales/Papa_Arte_Piedras/Documents/curriculo.pdf [PDF dañado, xref ilegible]"
   ],
-  "nota_autoria": "Importante: la carpeta E:/Domingo_Organizado/03_Academico/Becas_y_CV/ está mal categorizada. Todos sus archivos son de Pelayo González de Lena Rodríguez (hijo, b. 1986, biólogo molecular) o de su amigo Luis Palicio. El currículum real de Domingo se encuentra en E:/Domingo_Organizado/06_Documentos_Personales/Papa_Arte_Piedras/curriculum txomi.doc (firmado 18/02/2009).",
   "datos_publicos": {
     "lugar_nacimiento": "Pajares, concejo de Lena, Asturias",
     "anho_nacimiento": 1959,
@@ -118,7 +100,6 @@
   },
   "heraldica": {
     "paterno": { "apellido": "González de Lena", "fuente_imagen": "/personal/escudos/escudo-gonzalez.png" },
-    "materno": { "apellido": "Díaz", "nota": "sin escudo en el archivo" },
-    "linea_pelayo": { "apellido": "Rodríguez", "fuente_imagen": "/personal/escudos/escudo-rodriguez.jpg" }
+    "materno": { "apellido": "Díaz", "nota": "sin escudo en el archivo" }
   }
 }
