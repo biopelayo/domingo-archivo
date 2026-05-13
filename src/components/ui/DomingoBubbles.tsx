@@ -43,6 +43,13 @@ export default function DomingoBubbles({
 }: Props) {
   const wrapperRef = useRef<HTMLDivElement>(null);
   const [mouse, setMouse] = useState<{ x: number; y: number } | null>(null);
+  // Gate de montaje: las burbujas usan Math.random(), así que solo se
+  // pintan tras hidratar para evitar el hydration mismatch entre SSR y
+  // cliente. El SSR emite el contenedor vacío y el cliente lo rellena.
+  const [mounted, setMounted] = useState(false);
+  useEffect(() => {
+    setMounted(true);
+  }, []);
 
   const bubbles = useMemo<Bubble[]>(() => {
     const pool =
@@ -126,7 +133,7 @@ export default function DomingoBubbles({
         mixBlendMode: blend === "screen" ? "screen" : "normal",
       }}
     >
-      {bubbles.map((b) => {
+      {mounted && bubbles.map((b) => {
         const driftX = Math.sin(t / 4 + b.driftPhase) * 14;
         const driftY = Math.cos(t / 5 + b.driftPhase * 1.3) * 12;
         const rot = b.rotation + Math.sin(t / 8 + b.driftPhase) * 6;
