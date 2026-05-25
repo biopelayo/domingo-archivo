@@ -10,15 +10,11 @@ import {
   User,
   Sparkles,
   Leaf,
-  Layers,
   ShoppingBag,
-  Mail,
-  Calendar,
   Video,
   type LucideIcon,
 } from "lucide-react";
 
-import LanguageSwitcher from "@/components/ui/LanguageSwitcher";
 import DarkModeToggle from "@/components/ui/DarkModeToggle";
 import LogoMark from "@/components/ui/LogoMark";
 
@@ -28,10 +24,7 @@ const NAV_ITEMS = [
   { href: "/exposicion", key: "exposicion" },
   { href: "/micologia", key: "micologia" },
   { href: "/videos", key: "videos" },
-  { href: "/trilineal", key: "trilineal" },
   { href: "/encargos", key: "commissions" },
-  { href: "/eventos", key: "eventos" },
-  { href: "/contacto", key: "contact" },
 ] as const;
 
 const navIcons: Record<string, LucideIcon> = {
@@ -40,10 +33,7 @@ const navIcons: Record<string, LucideIcon> = {
   exposicion: Sparkles,
   micologia: Leaf,
   videos: Video,
-  trilineal: Layers,
   commissions: ShoppingBag,
-  eventos: Calendar,
-  contact: Mail,
 };
 
 export default function Header() {
@@ -95,7 +85,6 @@ export default function Header() {
 
         <div className="flex items-center gap-2">
           <DarkModeToggle />
-          <LanguageSwitcher />
           <button
             className="lg:hidden p-2 rounded-md"
             aria-label="Abrir menú"

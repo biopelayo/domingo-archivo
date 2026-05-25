@@ -6,7 +6,6 @@ import path from "node:path";
 import { Calendar, MapPin, Phone, Mail, Download, ExternalLink } from "lucide-react";
 import { getTranslations } from "next-intl/server";
 
-import SolicitudSection from "./SolicitudSection";
 import EventosMap from "@/components/eventos/EventosMap";
 
 export const metadata: Metadata = { title: "Eventos" };
@@ -187,7 +186,7 @@ export default async function EventosPage() {
         ) : (
           <>
             {proximos.length > 0 && (
-              <div className="mt-12">
+              <div className="mt-10">
                 <h2 className="text-2xl font-bold" style={{ color: "var(--pel-green)" }}>
                   {t("proximosTitle")}
                 </h2>
@@ -200,7 +199,7 @@ export default async function EventosPage() {
             )}
 
             {pasados.length > 0 && (
-              <div className="mt-12">
+              <div className="mt-10">
                 <h2 className="text-2xl font-bold" style={{ color: "var(--pel-green)" }}>
                   {t("pasadosTitle")}
                 </h2>
@@ -213,7 +212,7 @@ export default async function EventosPage() {
             )}
 
             {showMap && (
-              <div className="mt-12">
+              <div className="mt-10">
                 <h2 className="text-2xl font-bold" style={{ color: "var(--pel-green)" }}>
                   {t("mapaTitle")}
                 </h2>
@@ -235,11 +234,7 @@ export default async function EventosPage() {
           </>
         )}
 
-        <div className="mt-12">
-          <SolicitudSection />
-        </div>
-
-        <p className="text-xs mt-12 flex items-center gap-1" style={{ color: "var(--pel-muted)" }}>
+        <p className="text-xs mt-10 flex items-center gap-1" style={{ color: "var(--pel-muted)" }}>
           <ExternalLink size={12} aria-hidden="true" />
           {t("calendarHint")}
         </p>

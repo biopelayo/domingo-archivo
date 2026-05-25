@@ -59,17 +59,13 @@ export default function GalleryClient({ pieces }: { pieces: Piece[] }) {
         const seccionLabel = p.seccion === "1_ESCULTURAS" ? "Escultura" : "Otra pieza";
         const meta = [
           `Fotografía: ${p.fotografo || "—"}`,
-          p.fecha_fotografia ? `Fecha: ${p.fecha_fotografia}` : null,
-          p.resolucion_max_px ? `Resolución original: ${p.resolucion_max_px} px` : null,
           `Validación: ${p.validacion_cientifica || "pendiente"}`,
-        ]
-          .filter(Boolean)
-          .join(" · ");
+        ].join(" · ");
         return {
           src: withBasePath(p.web),
           alt: p.id_pieza,
           title: `${p.id_pieza} · ${seccionLabel}`,
-          description: `${meta}\nCrédito: Reproducción Domingo González de Lena Díaz · Fotografía Amanda C. Blanco, 2026.`,
+          description: `${meta}\nReproducción de Domingo González de Lena · foto de Amanda C. Blanco.`,
         };
       }),
     [filtered],

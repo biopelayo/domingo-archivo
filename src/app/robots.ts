@@ -2,7 +2,7 @@ import type { MetadataRoute } from "next";
 
 export const dynamic = "force-static";
 
-const BASE = process.env.NEXT_PUBLIC_BASE_URL || "https://biopelayo.github.io/domingo-archivo";
+const BASE = process.env.NEXT_PUBLIC_BASE_URL || "https://paleotxomi.com";
 
 export default function robots(): MetadataRoute.Robots {
   return {

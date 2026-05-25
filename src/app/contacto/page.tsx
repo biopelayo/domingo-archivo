@@ -29,14 +29,14 @@ export default function ContactPage() {
             <a href="mailto:domingodelena@gmail.com">domingodelena@gmail.com</a>
           </p>
           <Link href="/encargos" className="btn btn-ghost mt-3 inline-flex" style={{ fontSize: "0.85rem" }}>
-            Ver tabla de precios y formulario
+            Ver encargos
           </Link>
         </div>
 
         <div className="card mt-4">
           <p className="kicker mb-2" style={{ color: "var(--pel-warm)" }}>Prensa, instituciones e investigación</p>
           <p className="text-sm" style={{ color: "var(--pel-ink-soft)" }}>
-            Para entrevistas, peticiones de imagen y propuestas de colaboración con el proyecto Trilineal en torno a la candidatura de Oviedo a Capital Europea de la Cultura 2031, escribe a Domingo al teléfono o correo de arriba.
+            Para prensa, instituciones e investigación en torno al proyecto Trilineal, escribe a Domingo al teléfono o correo de arriba.
           </p>
           <Link href="/trilineal" className="btn btn-ghost mt-3 inline-flex" style={{ fontSize: "0.85rem" }}>
             Ir al proyecto Trilineal

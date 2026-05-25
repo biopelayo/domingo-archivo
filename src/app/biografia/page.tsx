@@ -1,12 +1,13 @@
 import type { Metadata } from "next";
-import Link from "next/link";
+import Image from "next/image";
 import { promises as fs } from "node:fs";
 import path from "node:path";
 import { getTranslations } from "next-intl/server";
-import { Hammer, Leaf, Mountain, ArrowUpRight } from "lucide-react";
+import { Hammer, Leaf, Mountain } from "lucide-react";
 
 import DomingoBubbles from "@/components/ui/DomingoBubbles";
 import Timeline, { type TimelineItem } from "@/components/biografia/Timeline";
+import { withBasePath } from "@/lib/basePath";
 
 export const metadata: Metadata = { title: "Biografía" };
 
@@ -24,6 +25,9 @@ type Bio = {
     fecha_nacimiento_completa?: string;
   };
   cronologia: CronologiaEntry[];
+  heraldica?: {
+    paterno?: { apellido?: string; fuente_imagen?: string };
+  };
 };
 
 async function loadBio(): Promise<Bio> {
@@ -45,17 +49,12 @@ export default async function BiografiaPage() {
   const nombre = bio.nombre_completo ?? bio.nombre;
   const lugarNac = bio.datos_publicos?.lugar_nacimiento ?? "Pajares (Lena)";
   const anhoNac = bio.datos_publicos?.anho_nacimiento ?? 1959;
+  const escudo = bio.heraldica?.paterno;
 
   const facetas = [
     { id: "escultor", Icon: Hammer, label: t("facetas.escultor") },
     { id: "micologo", Icon: Leaf, label: t("facetas.micologo") },
     { id: "naturalista", Icon: Mountain, label: t("facetas.naturalista") },
-  ];
-
-  const enlaces = [
-    { href: "/exposicion", label: "Arte paleolítico" },
-    { href: "/encargos", label: "Encargos" },
-    { href: "/contacto", label: "Contacto" },
   ];
 
   return (
@@ -99,7 +98,7 @@ export default async function BiografiaPage() {
         </header>
 
         {/* Timeline */}
-        <section className="mt-12" aria-labelledby="timeline-titulo">
+        <section className="mt-10" aria-labelledby="timeline-titulo">
           <h2
             id="timeline-titulo"
             className="text-2xl font-bold"
@@ -116,41 +115,24 @@ export default async function BiografiaPage() {
           <Timeline items={hitos} />
         </section>
 
-        {/* Para saber más */}
-        <section className="mt-16" aria-labelledby="saber-mas-titulo">
-          <h2
-            id="saber-mas-titulo"
-            className="text-2xl font-bold"
-            style={{ color: "var(--pel-green)" }}
+        {/* Heráldica · detalle discreto */}
+        {escudo?.fuente_imagen && (
+          <div
+            className="mt-8 flex items-center gap-3"
+            style={{ borderTop: "1px solid var(--pel-border)", paddingTop: "1.1rem" }}
           >
-            {t("para_saber_mas_titulo")}
-          </h2>
-          <p className="lead mt-2" style={{ fontSize: "0.95rem" }}>
-            {t("para_saber_mas_intro")}
-          </p>
-          <div className="grid gap-3 mt-4 sm:grid-cols-3">
-            {enlaces.map((e) => (
-              <Link key={e.href} href={e.href} className="card group">
-                <div className="flex items-center justify-between gap-2">
-                  <span
-                    style={{
-                      color: "var(--pel-green)",
-                      fontWeight: 700,
-                      fontSize: "1rem",
-                    }}
-                  >
-                    {e.label}
-                  </span>
-                  <ArrowUpRight
-                    size={18}
-                    style={{ color: "var(--pel-warm)" }}
-                    aria-hidden
-                  />
-                </div>
-              </Link>
-            ))}
+            <Image
+              src={withBasePath(escudo.fuente_imagen)}
+              alt={`Escudo del apellido ${escudo.apellido ?? "González de Lena"}`}
+              width={44}
+              height={52}
+              style={{ width: "auto", height: 52 }}
+            />
+            <p style={{ fontSize: "0.82rem", color: "var(--pel-muted)" }}>
+              Escudo del apellido {escudo.apellido ?? "González de Lena"}.
+            </p>
           </div>
-        </section>
+        )}
       </div>
     </section>
   );

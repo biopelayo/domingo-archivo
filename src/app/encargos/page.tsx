@@ -22,7 +22,6 @@ import {
   PiggyBank,
   Truck,
   ShieldCheck,
-  Info,
 } from "lucide-react";
 import { getTranslations } from "next-intl/server";
 import { useTranslations } from "next-intl";
@@ -30,16 +29,6 @@ import { useTranslations } from "next-intl";
 import CommissionsForm from "@/components/forms/CommissionsForm";
 
 export const metadata: Metadata = { title: "Encargos" };
-
-type Precios = {
-  fuente: string;
-  moneda: string;
-  contacto_reservas: { nombre: string; telefono: string };
-  rangos: { minimo: number; maximo: number };
-  piedras_pequenas: number;
-  piezas: { ref: string; precio: number }[];
-  leyenda_referencias: Record<string, string>;
-};
 
 type Destacado = {
   slug: string | null;
@@ -64,11 +53,6 @@ type DestacadosFile = {
 const WHATSAPP_NUMBER = "34662585798";
 const PHONE_DISPLAY = "662 58 57 98";
 const EMAIL = "domingodelena@gmail.com";
-
-async function loadPrecios(): Promise<Precios> {
-  const txt = await fs.readFile(path.join(process.cwd(), "public", "data", "precios.json"), "utf-8");
-  return JSON.parse(txt);
-}
 
 async function loadDestacados(): Promise<Destacado[]> {
   const txt = await fs.readFile(
@@ -99,7 +83,7 @@ function ComHeader() {
 function SectionTitle({ children }: { children: React.ReactNode }) {
   return (
     <h2
-      className="text-2xl sm:text-3xl font-bold mt-16"
+      className="text-2xl sm:text-3xl font-bold mt-10"
       style={{ color: "var(--pel-green)" }}
     >
       {children}
@@ -125,16 +109,6 @@ function DestacadosBlock({ destacados }: { destacados: Destacado[] }) {
     <div className="mt-6">
       <SectionTitle>{t("title")}</SectionTitle>
       <SectionLead>{t("lead")}</SectionLead>
-
-      <div
-        className="card mt-4 flex items-start gap-3"
-        style={{ background: "var(--pel-green-4)", borderColor: "var(--pel-green-3)" }}
-      >
-        <Info size={18} style={{ color: "var(--pel-green)", flexShrink: 0, marginTop: 2 }} />
-        <p style={{ color: "var(--pel-ink-soft)", fontSize: "0.95rem", margin: 0 }}>
-          {t("fichasNota")}
-        </p>
-      </div>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 mt-6">
         {destacados.map((d) => (
@@ -312,21 +286,7 @@ function PagosBlock() {
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 mt-6">
         {PAGOS.map(({ key, Icon }) => (
           <div key={key} className="card flex items-start gap-3">
-            <div
-              style={{
-                background: "var(--pel-green-4)",
-                color: "var(--pel-green)",
-                width: 40,
-                height: 40,
-                borderRadius: 10,
-                display: "flex",
-                alignItems: "center",
-                justifyContent: "center",
-                flexShrink: 0,
-              }}
-            >
-              <Icon size={20} />
-            </div>
+            <Icon size={20} style={{ color: "var(--pel-green)", flexShrink: 0, marginTop: 2 }} />
             <div>
               <h3
                 style={{
@@ -490,98 +450,18 @@ function ContactoBlock() {
 function DevolucionesBlock() {
   const t = useTranslations("commissions.encargos.devoluciones");
   return (
-    <div>
-      <SectionTitle>{t("title")}</SectionTitle>
-      <div className="card mt-6 flex items-start gap-4">
-        <ShieldCheck
-          size={28}
-          style={{ color: "var(--pel-green)", flexShrink: 0, marginTop: 2 }}
-        />
-        <p style={{ color: "var(--pel-ink-soft)", fontSize: "1rem", margin: 0, lineHeight: 1.6 }}>
+    <div className="card mt-4 flex items-start gap-4">
+      <ShieldCheck
+        size={26}
+        style={{ color: "var(--pel-green)", flexShrink: 0, marginTop: 2 }}
+      />
+      <div>
+        <h3 style={{ color: "var(--pel-green)", fontWeight: 700, fontSize: "1rem", margin: "0 0 0.3rem" }}>
+          {t("title")}
+        </h3>
+        <p style={{ color: "var(--pel-ink-soft)", fontSize: "0.95rem", margin: 0, lineHeight: 1.6 }}>
           {t("body")}
         </p>
-      </div>
-    </div>
-  );
-}
-
-// =====================================================
-// Tabla de precios completa (referencia secundaria)
-// =====================================================
-
-function PreciosTablaBlock({ precios }: { precios: Precios }) {
-  const t = useTranslations("commissions");
-  const ordenadas = [...precios.piezas].sort((a, b) => b.precio - a.precio);
-  return (
-    <div>
-      <SectionTitle>{t("preciosTitle")}</SectionTitle>
-      <p className="lead mt-2" style={{ fontSize: "0.95rem" }}>
-        {t("preciosNota")}
-      </p>
-      <p className="text-xs mt-1" style={{ color: "var(--pel-muted)" }}>
-        Fuente: {precios.fuente}.
-      </p>
-
-      <div className="grid sm:grid-cols-3 gap-4 mt-4">
-        <div className="card text-center">
-          <p className="kicker">Mínimo</p>
-          <p style={{ color: "var(--pel-green)", fontWeight: 700, fontSize: "1.6rem" }}>
-            {precios.rangos.minimo} €
-          </p>
-        </div>
-        <div className="card text-center">
-          <p className="kicker">Máximo</p>
-          <p style={{ color: "var(--pel-green)", fontWeight: 700, fontSize: "1.6rem" }}>
-            {precios.rangos.maximo} €
-          </p>
-        </div>
-        <div className="card text-center">
-          <p className="kicker">Piedras pequeñas</p>
-          <p style={{ color: "var(--pel-warm)", fontWeight: 700, fontSize: "1.6rem" }}>
-            {precios.piedras_pequenas} €
-          </p>
-        </div>
-      </div>
-
-      <div className="card mt-4 p-0 overflow-x-auto">
-        <table className="w-full text-sm">
-          <thead>
-            <tr style={{ background: "var(--pel-green-4)", color: "var(--pel-green)" }}>
-              <th className="text-left p-2">Referencia</th>
-              <th className="text-left p-2">Familia</th>
-              <th className="text-right p-2">Precio (€)</th>
-            </tr>
-          </thead>
-          <tbody>
-            {ordenadas.map((p) => {
-              const familia = p.ref.match(/^[A-Z]+/)?.[0] ?? "";
-              const desc = precios.leyenda_referencias[familia] ?? "";
-              return (
-                <tr key={p.ref} style={{ borderTop: "1px solid var(--pel-border)" }}>
-                  <td
-                    className="p-2"
-                    style={{
-                      fontFamily: "var(--font-mono)",
-                      fontWeight: 700,
-                      color: "var(--pel-warm)",
-                    }}
-                  >
-                    {p.ref}
-                  </td>
-                  <td className="p-2" style={{ color: "var(--pel-ink-soft)" }}>
-                    {desc}
-                  </td>
-                  <td
-                    className="p-2 text-right"
-                    style={{ fontWeight: 700, color: "var(--pel-green)" }}
-                  >
-                    {p.precio}
-                  </td>
-                </tr>
-              );
-            })}
-          </tbody>
-        </table>
       </div>
     </div>
   );
@@ -592,7 +472,7 @@ function PreciosTablaBlock({ precios }: { precios: Precios }) {
 // =====================================================
 
 export default async function CommissionsPage() {
-  const [precios, destacados] = await Promise.all([loadPrecios(), loadDestacados()]);
+  const destacados = await loadDestacados();
   const t = await getTranslations("commissions");
 
   return (
@@ -614,9 +494,7 @@ export default async function CommissionsPage() {
 
         <DevolucionesBlock />
 
-        <PreciosTablaBlock precios={precios} />
-
-        <h2 className="text-2xl font-bold mt-16" style={{ color: "var(--pel-green)" }}>
+        <h2 className="text-2xl font-bold mt-10" style={{ color: "var(--pel-green)" }}>
           Solicitud por escrito
         </h2>
         <p className="lead mt-3" style={{ fontSize: "0.95rem" }}>

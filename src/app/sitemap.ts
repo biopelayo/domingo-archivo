@@ -2,7 +2,7 @@ import type { MetadataRoute } from "next";
 
 export const dynamic = "force-static";
 
-const BASE = process.env.NEXT_PUBLIC_BASE_URL || "https://biopelayo.github.io/domingo-archivo";
+const BASE = process.env.NEXT_PUBLIC_BASE_URL || "https://paleotxomi.com";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const now = new Date();
@@ -14,10 +14,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/videos",
     "/trilineal",
     "/galeria/corpus",
-    "/catalogo",
     "/mapa",
-    "/investigacion",
-    "/recursos",
     "/encargos",
     "/contacto",
   ];

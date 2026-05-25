@@ -53,7 +53,7 @@ export default async function VideosPage() {
         </p>
 
         {data.secciones.map((seccion) => (
-          <article key={seccion.id} className="mt-14">
+          <article key={seccion.id} className="mt-10">
             <header>
               <h2
                 className="flex items-center gap-3 text-2xl md:text-3xl font-bold"
@@ -96,15 +96,6 @@ export default async function VideosPage() {
                 <p className="lead" style={{ fontSize: "1rem" }}>
                   {t("placeholder")}
                 </p>
-                <div className="flex flex-wrap gap-3 mt-5">
-                  <a
-                    href="mailto:domingodelena@gmail.com?subject=Aportar%20un%20video%20de%20La%20huerta%20de%20Txomi"
-                    className="btn btn-primary"
-                    style={{ fontSize: "0.95rem" }}
-                  >
-                    {t("aportar")}
-                  </a>
-                </div>
               </div>
             ) : (
               <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5 mt-6">

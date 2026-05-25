@@ -2,7 +2,7 @@
 
 Sitio web del archivo personal de Domingo González de Lena Díaz: arte paleolítico asturiano, micología, escritos, música y biografía. Editado por su hijo Pelayo González de Lena Rodríguez.
 
-**URL pública:** https://biopelayo.github.io/domingo-archivo/
+**URL pública:** https://paleotxomi.com
 
 ## Stack
 
@@ -16,15 +16,9 @@ npm run dev          # http://localhost:3000
 npm run build        # genera out/ para GitHub Pages
 ```
 
-Para construir como en producción (con `basePath: /domingo-archivo`):
-
-```bash
-GITHUB_ACTIONS=true npm run build
-```
-
 ## Datos del sitio
 
-- `public/data/exposicion.json` — 25 piezas reales del proyecto expositivo de Domingo, en 8 cuevas asturianas.
+- `public/data/exposicion.json` — 23 piezas del proyecto expositivo de Domingo, en 7 cuevas asturianas.
 - `public/data/precios.json` — tabla de precios vigente (52 referencias).
 - `public/data/biografia.json` — datos biográficos y contacto.
 - `public/data/escritos.json` — 7 ensayos publicados.
@@ -36,11 +30,9 @@ GITHUB_ACTIONS=true npm run build
 
 Cada `git push` a `main` dispara el workflow `.github/workflows/deploy.yml`:
 
-1. `npm ci` + `npm run build` con `basePath` ajustado.
+1. `npm ci` + `npm run build`.
 2. Sube el contenido de `out/` como artefacto.
-3. Lo despliega a GitHub Pages.
-
-Hay además un cron semanal (lunes 04:00 UTC) que rehace el build para refrescar los datos de OpenAlex en `/investigacion`.
+3. Lo despliega a GitHub Pages, con dominio propio `paleotxomi.com`.
 
 ## Contacto
 

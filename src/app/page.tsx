@@ -1,12 +1,12 @@
 import HeroSection from "@/components/home/HeroSection";
-import StatsBand from "@/components/home/StatsBand";
 import FacetCards from "@/components/home/FacetCards";
+import ExpoActualBanner from "@/components/home/ExpoActualBanner";
 
 export default function HomePage() {
   return (
     <>
+      <ExpoActualBanner />
       <HeroSection />
-      <StatsBand />
       <FacetCards />
     </>
   );

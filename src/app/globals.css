@@ -99,8 +99,8 @@ a:hover { color: var(--pel-warm); }
   padding-left: 1.25rem;
   padding-right: 1.25rem;
 }
-.section { padding: 4rem 0; }
-.section-tight { padding: 2rem 0; }
+.section { padding: 2.75rem 0; }
+.section-tight { padding: 1.5rem 0; }
 .h-divider {
   height: 3px;
   width: 64px;
@@ -113,7 +113,7 @@ a:hover { color: var(--pel-warm); }
   background: var(--pel-card);
   border: 1px solid var(--pel-border);
   border-radius: 14px;
-  padding: 1.4rem;
+  padding: 1.1rem;
   transition: transform 240ms ease, box-shadow 240ms ease, border-color 240ms ease;
 }
 .card:hover {

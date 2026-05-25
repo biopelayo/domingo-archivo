@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Image from "next/image";
+import Link from "next/link";
 import { promises as fs } from "node:fs";
 import path from "node:path";
 import { useTranslations } from "next-intl";
@@ -57,7 +58,6 @@ export default async function ExposicionPage() {
   const fotosExpo = await listImages("personal/exposicion");
   const fotosPiezas = await listImages("personal/piezas");
   const totalPiezas = data.cuevas.reduce((acc, c) => acc + c.piezas.length, 0);
-  const tBio = "exposicion";
 
   return (
     <section className="section relative overflow-hidden">
@@ -90,7 +90,7 @@ export default async function ExposicionPage() {
 
         {fotosExpo.length > 0 && (
           <>
-            <h2 className="text-2xl font-bold mt-12" style={{ color: "var(--pel-green)" }}>
+            <h2 className="text-2xl font-bold mt-10" style={{ color: "var(--pel-green)" }}>
               Fotos de la exposición
             </h2>
             <div className="grid grid-cols-2 sm:grid-cols-3 gap-3 mt-4">
@@ -110,7 +110,7 @@ export default async function ExposicionPage() {
           </>
         )}
 
-        <h2 className="text-2xl font-bold mt-12" style={{ color: "var(--pel-green)" }}>
+        <h2 className="text-2xl font-bold mt-10" style={{ color: "var(--pel-green)" }}>
           Las {data.cuevas.length} cuevas y sus piezas
         </h2>
         <div className="space-y-6 mt-4">
@@ -142,19 +142,14 @@ export default async function ExposicionPage() {
           ))}
         </div>
 
-        <h2 className="text-2xl font-bold mt-12" style={{ color: "var(--pel-green)" }}>Estudios de referencia</h2>
-        <p className="lead mt-2">
-          Domingo trabaja con la bibliografía de:
+        <p className="lead mt-10" style={{ fontSize: "0.95rem" }}>
+          <strong style={{ color: "var(--pel-green)" }}>Estudios de referencia:</strong>{" "}
+          {data.estudios_referencia.join(", ")}.
         </p>
-        <ul className="grid sm:grid-cols-2 gap-x-6 gap-y-1 mt-2 list-disc pl-6">
-          {data.estudios_referencia.map((a) => (
-            <li key={a} style={{ color: "var(--pel-ink-soft)" }}>{a}</li>
-          ))}
-        </ul>
 
         {fotosPiezas.length > 0 && (
           <>
-            <h2 className="text-2xl font-bold mt-12" style={{ color: "var(--pel-green)" }}>
+            <h2 className="text-2xl font-bold mt-10" style={{ color: "var(--pel-green)" }}>
               Piezas y la Venus del cuerno
             </h2>
             <p className="lead mt-2" style={{ fontSize: "0.95rem" }}>
@@ -176,6 +171,12 @@ export default async function ExposicionPage() {
             </div>
           </>
         )}
+
+        <div className="mt-10">
+          <Link href="/galeria/corpus" className="btn btn-ghost">
+            Ver el corpus fotográfico
+          </Link>
+        </div>
       </div>
     </section>
   );

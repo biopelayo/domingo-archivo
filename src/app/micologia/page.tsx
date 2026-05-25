@@ -12,9 +12,9 @@ import { withBasePath } from "@/lib/basePath";
 export const metadata: Metadata = { title: "Micología y docencia" };
 
 const CURSOS = [
-  { ano: 2013, lugar: "Oviedo", material: "Libreto «Iniciación a la micología» (PDF)" },
-  { ano: 2014, lugar: "Oviedo (San Claudio)", material: "Carteles, contenido del programa, fichas de setas, NOTAS" },
-  { ano: 2015, lugar: "Oviedo", material: "Cartel curso 2015" },
+  { ano: 2013, lugar: "Oviedo" },
+  { ano: 2014, lugar: "Oviedo (San Claudio)" },
+  { ano: 2015, lugar: "Oviedo" },
 ];
 
 async function loadSetas(): Promise<Seta[]> {
@@ -44,7 +44,7 @@ function GaleriaHeader() {
   const t = useTranslations("micologia.galeria");
   return (
     <>
-      <h2 className="text-2xl font-bold mt-12" style={{ color: "var(--pel-green)" }}>
+      <h2 className="text-2xl font-bold mt-10" style={{ color: "var(--pel-green)" }}>
         {t("titulo")}
       </h2>
       <p className="lead mt-2" style={{ fontSize: "0.92rem" }}>{t("subtitulo")}</p>
@@ -71,9 +71,6 @@ export default async function MicologiaPage() {
             <p className="lead mt-2" style={{ fontSize: "0.95rem" }}>
               Libreto de 30 páginas escrito por Domingo en 2013 para sus cursos en Oviedo. Cubre clasificación de hongos, partes del carpóforo, especies comestibles y tóxicas, y claves de búsqueda y degustación.
             </p>
-            <p className="mt-3 text-sm" style={{ color: "var(--pel-ink-soft)" }}>
-              Subtítulo del libreto: «Algunas claves para la búsqueda, recolección, reconocimiento y degustación de las setas».
-            </p>
             <a
               href={withBasePath("/micologia/libreto-iniciacion-micologia.pdf")}
               target="_blank"
@@ -98,16 +95,15 @@ export default async function MicologiaPage() {
           </div>
         </div>
 
-        <h2 className="text-2xl font-bold mt-12" style={{ color: "var(--pel-green)" }}>Cursos impartidos</h2>
+        <h2 className="text-2xl font-bold mt-10" style={{ color: "var(--pel-green)" }}>Cursos impartidos</h2>
         <ul className="grid sm:grid-cols-3 gap-4 mt-4">
           {CURSOS.map((c) => (
             <li key={c.ano} className="card">
               <div className="flex items-center gap-2 mb-1" style={{ color: "var(--pel-warm)" }}>
                 <Calendar size={16} /> <span className="kicker" style={{ color: "var(--pel-warm)" }}>Curso</span>
               </div>
-              <p style={{ color: "var(--pel-green)", fontWeight: 700, fontSize: "2rem" }}>{c.ano}</p>
+              <p style={{ color: "var(--pel-green)", fontWeight: 700, fontSize: "1.6rem" }}>{c.ano}</p>
               <p style={{ color: "var(--pel-ink-soft)", fontSize: "0.9rem" }}>{c.lugar}</p>
-              <p className="text-sm mt-2" style={{ color: "var(--pel-ink-soft)" }}>{c.material}</p>
             </li>
           ))}
         </ul>

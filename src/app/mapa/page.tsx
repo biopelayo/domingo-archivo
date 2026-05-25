@@ -25,20 +25,6 @@ export default function MapPage() {
         <div className="mt-8 card p-2">
           <NalonMap />
         </div>
-        <div className="mt-6 grid sm:grid-cols-3 gap-4 text-sm">
-          <div className="card">
-            <p className="kicker mb-1" style={{ color: "var(--pel-green)" }}>Yacimientos del Nalón ovetense</p>
-            <p style={{ color: "var(--pel-ink-soft)" }}>La Lluera (San Juan de Priorio) y La Viña (Manzaneda).</p>
-          </div>
-          <div className="card">
-            <p className="kicker mb-1" style={{ color: "var(--pel-green-2)" }}>Cuevas UNESCO Asturias</p>
-            <p style={{ color: "var(--pel-ink-soft)" }}>Tito Bustillo, Candamo, El Pindal, Llonín, Covaciella.</p>
-          </div>
-          <div className="card">
-            <p className="kicker mb-1" style={{ color: "var(--pel-warm)" }}>Oviedo / Uviéu</p>
-            <p style={{ color: "var(--pel-ink-soft)" }}>Referencia urbana del proyecto.</p>
-          </div>
-        </div>
       </div>
     </section>
   );

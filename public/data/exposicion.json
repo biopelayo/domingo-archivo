@@ -1,6 +1,6 @@
 {
   "fuente": "Proyecto para la instalación de una exposición sobre arte paleolítico asturiano (Domingo González de Lena Díaz)",
-  "objeto": "Reproducciones en piedra de grabados y pinturas de las cuevas paleolíticas asturianas. Cada pieza acompañada de panel informativo con ubicación, fotos, cronología y horizonte cultural.",
+  "objeto": "Reproducciones en piedra de grabados y pinturas paleolíticos de cuevas asturianas, cada pieza con su panel de contexto.",
   "estudios_referencia": [
     "Henri Breuil",
     "Conde de la Vega del Sella",
@@ -88,13 +88,6 @@
         { "id": 22, "motivo": "Uro y gran ciervo de los venablos", "ancho_cm": 40, "alto_cm": 40 },
         { "id": 23, "motivo": "Caballo rayado", "ancho_cm": 35, "alto_cm": 30 }
       ]
-    },
-    {
-      "id": "covaciella",
-      "nombre": "Cueva de Covaciella",
-      "concejo": "Cabrales",
-      "unesco": true,
-      "piezas": []
     }
   ]
 }
