@@ -8,9 +8,9 @@
 
 **Domingo González de Lena expone en La Esquina del Peso 24 reproducciones en piedra de grabados paleolíticos asturianos**
 
-**Oviedo, [fecha de envío].** El autor **Domingo González de Lena Díaz**, nacido en Pajares (concejo de Lena) en 1959, inaugura el próximo **[día y hora]** su exposición individual **«Arte paleolítico asturiano en piedra»** en La Esquina del Peso (Calle del Peso 1, Oviedo).
+**Oviedo, [fecha de envío].** El autor **Domingo González de Lena Díaz**, nacido en Pajares (concejo de Lena) en 1959, inaugura el próximo **sábado 20 de junio a las 19:30** su exposición individual **«Arte paleolítico asturiano en piedra»** en La Esquina del Peso (Calle del Peso 1, Oviedo).
 
-La muestra reúne **24 piezas talladas a mano**: trece grabados de siete cuevas asturianas (Pindal, Tito Bustillo, Les Pedroses, Buxu, Llonín, Lluera y Candamo) y la **Venus del cuerno**, una pieza singular del autor.
+La muestra reúne **24 piezas talladas a mano**: 23 reproducciones en piedra de grabados de siete cuevas asturianas (Pindal, Tito Bustillo, Les Pedroses, Buxu, Llonín, Lluera y Candamo) y la **Venus del cuerno**, una pieza singular del autor.
 
 Domingo González de Lena es guarda particular de campo y caza, cultivador de setas y reproductor de arte paleolítico asturiano. Desde 2009 trabaja la piedra a mano en su taller de Lena. Su proyecto expositivo se apoya en los estudios de **Henri Breuil**, el **Conde de la Vega del Sella**, **Eduardo Hernández-Pacheco**, **Hugo Obermaier**, **Francisco Jordá Cerdá** y **Javier Fortea Pérez**.
 
@@ -20,8 +20,8 @@ La Esquina del Peso, en pleno casco antiguo de Oviedo, ya ha acogido obra de aut
 
 **Datos prácticos**
 
-- **Inauguración:** [día y hora].
-- **Exposición:** del [fecha inicio] al [fecha fin].
+- **Inauguración pública:** sábado 20 de junio de 2026 a las 19:30.
+- **Exposición:** del 20 al 30 de junio de 2026.
 - **Lugar:** La Esquina del Peso · Calle del Peso 1, 33009 Oviedo.
 - **Horario del local:** L-J 8:30-17:30 · V 8:30-00:30 · S 9:30-00:30 · D 9:30-17:30.
 - **Entrada:** libre.
@@ -39,7 +39,7 @@ La Esquina del Peso, en pleno casco antiguo de Oviedo, ya ha acogido obra de aut
 
 ## Versión corta (para X / redes propias)
 
-Domingo González de Lena Díaz inaugura «Arte paleolítico asturiano en piedra» el [día y hora] en La Esquina del Peso (Oviedo). 24 reproducciones talladas a mano: siete cuevas asturianas + Venus del cuerno.
+Domingo González de Lena Díaz inaugura «Arte paleolítico asturiano en piedra» el sábado 20 de junio a las 19:30 en La Esquina del Peso (Oviedo). 24 piezas talladas a mano: 23 reproducciones de siete cuevas asturianas y la Venus del cuerno.
 
 ## Notas operativas
 

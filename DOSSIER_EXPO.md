@@ -2,7 +2,7 @@
 ## Arte paleolítico asturiano en piedra
 
 ### Exposición individual · La Esquina del Peso · Oviedo
-### Del [21 de junio] al [30 de junio] de 2026
+### Del 20 al 30 de junio de 2026
 
 ---
 
@@ -36,8 +36,8 @@ Casco antiguo, junto al Mercado del Fontán y al Ayuntamiento. La calle del Peso
 
 ## Datos prácticos
 
-- **Inauguración:** [sábado 21 de junio de 2026] a las [19:30].
-- **Exposición:** del [21 al 30 de junio].
+- **Inauguración pública:** sábado 20 de junio de 2026 a las 19:30. Inauguración privada la víspera (viernes 19) para familia y prensa cercana.
+- **Exposición:** del 20 al 30 de junio.
 - **Horario del local:** L-J 8:30-17:30 · V 8:30-00:30 · S 9:30-00:30 · D 9:30-17:30.
 - **Entrada:** libre.
 

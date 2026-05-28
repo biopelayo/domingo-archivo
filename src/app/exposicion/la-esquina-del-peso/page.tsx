@@ -47,9 +47,15 @@ export default async function ExposicionLaEsquinaPage() {
         <h1 className="headline">Domingo González de Lena</h1>
         <p
           className="text-xl mt-1"
-          style={{ color: "var(--pel-ink)", fontWeight: 500 }}
+          style={{ color: "var(--pel-ink)", fontWeight: 500, fontStyle: "italic" }}
         >
-          Arte paleolítico asturiano en piedra
+          Arte Paleolítico parietal y Venus gravetienses
+        </p>
+        <p
+          className="mt-1"
+          style={{ color: "var(--pel-ink-soft)", fontSize: "0.95rem" }}
+        >
+          Grabados y figurillas en piedra de bulto redondo
         </p>
         <div className="h-divider" />
 
@@ -67,10 +73,10 @@ export default async function ExposicionLaEsquinaPage() {
           <div className="card">
             <p className="kicker mb-1" style={{ color: "var(--pel-warm)" }}>Fechas</p>
             <p style={{ fontWeight: 700, color: "var(--pel-green)", fontSize: "1.1rem" }}>
-              Del [21 de junio] al [30 de junio]
+              Del 20 al 30 de junio
             </p>
             <p style={{ color: "var(--pel-ink-soft)", fontSize: "0.95rem" }}>
-              Inauguración: [sábado 21] a las [19:30]
+              Inauguración: sábado 20 a las 19:30
             </p>
           </div>
         </div>
@@ -93,9 +99,19 @@ export default async function ExposicionLaEsquinaPage() {
         </h2>
         <p className="lead mt-3">
           Domingo González de Lena Díaz reúne en esta muestra <strong>24 piezas</strong>{" "}
-          talladas a mano: 23 reproducciones en piedra de grabados paleolíticos de siete cuevas
-          asturianas (Pindal, Tito Bustillo, Les Pedroses, Buxu, Llonín, Lluera y Candamo) y la{" "}
-          <strong>Venus del cuerno</strong>, una pieza singular del autor.
+          talladas a mano. La exposición combina dos vertientes de su obra: las{" "}
+          <strong>reproducciones en piedra de grabados paleolíticos</strong> de siete cuevas
+          asturianas (Pindal, Tito Bustillo, Les Pedroses, Buxu, Llonín, Lluera y Candamo) y las{" "}
+          <strong>figurillas gravetienses</strong> talladas en bulto redondo, herederas de las
+          Venus paleolíticas de Willendorf, Laussel, Lespugue y Brassempouy.
+        </p>
+        <p className="lead mt-3">
+          Cuatro hilos atraviesan la muestra: las <strong>Venus gravetienses</strong>{" "}
+          (~30.000-22.000 AP), el <strong>arte franco-cantábrico</strong> que se extiende del
+          suroeste de Francia a la cornisa cantábrica, la <strong>cierva trilineal</strong>{" "}
+          asturiana definida por Javier Fortea, y las <strong>5 cuevas asturianas Patrimonio
+          Mundial UNESCO</strong> desde 2008 (Tito Bustillo, La Peña de Candamo, El Pindal,
+          Llonín y Covaciella).
         </p>
         <p className="lead mt-3">
           Los originales rupestres están protegidos en las cuevas. Estas reproducciones permiten
@@ -198,11 +214,11 @@ export default async function ExposicionLaEsquinaPage() {
             Domingo González de Lena Díaz
           </p>
           <p className="mt-2" style={{ color: "var(--pel-ink-soft)", fontSize: "0.95rem", lineHeight: 1.55 }}>
-            Pajares, concejo de Lena (Asturias), 1959. Guarda particular de campo y caza, cultivador
-            de setas y reproductor de arte paleolítico asturiano. Trabaja la piedra a mano en su
-            taller de Lena. Su proyecto expositivo, iniciado en 2009, se basa en los estudios de
-            Henri Breuil, el Conde de la Vega del Sella, Eduardo Hernández-Pacheco, Hugo Obermaier,
-            Francisco Jordá Cerdá y Javier Fortea Pérez.
+            Pajares, concejo de Lena (Asturias), 1959. Trabaja la piedra a mano en su taller de
+            Lena, con cincel y maza. Reproduce el arte paleolítico parietal de las cuevas
+            asturianas y talla figurillas gravetienses en bulto redondo. Su proyecto, iniciado en
+            2009, se apoya en los estudios de Henri Breuil, el Conde de la Vega del Sella, Eduardo
+            Hernández-Pacheco, Hugo Obermaier, Francisco Jordá Cerdá y Javier Fortea Pérez.
           </p>
           <p className="mt-3" style={{ fontSize: "0.85rem" }}>
             <Link href="/biografia" style={{ color: "var(--pel-warm)" }}>

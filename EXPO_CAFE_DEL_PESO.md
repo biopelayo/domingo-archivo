@@ -180,7 +180,7 @@ Soy Domingo González de Lena Díaz. Nací en Pajares, en el concejo de Lena, en
 
 #### 3 · Qué se ve aquí (3 min)
 
-Lo que cuelga en estas paredes son [N] piedras: trece grabados de siete cuevas asturianas, y dos piezas sueltas, una de ellas la Venus del cuerno.
+Lo que cuelga en estas paredes son 24 piedras: 23 reproducciones de grabados de siete cuevas asturianas y la Venus del cuerno, una pieza singular mía.
 
 Las siete cuevas, en el orden del recorrido.
 
@@ -509,7 +509,7 @@ Orden de recorrido: **Pindal → Tito Bustillo → Les Pedroses → Buxu → Llo
 
 ### 11.11 · Calendario de publicación
 
-En `CALENDARIO_PUBLICACION.md`: plan W-4 → W+1 con fechas concretas (asumiendo inauguración sábado 21 jun 2026), contenido por canal y cuentas a etiquetar.
+En `CALENDARIO_PUBLICACION.md`: plan W-4 → W+1 con fechas concretas (inauguración pública sábado 20 jun 2026, decisión tomada tras auditoría del 25 may), contenido por canal y cuentas a etiquetar.
 
 ### 11.12 · Portfolio web propio · creado
 

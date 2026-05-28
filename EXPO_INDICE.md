@@ -1,12 +1,37 @@
 # Índice · Exposición Domingo González de Lena
 ## La Esquina del Peso · Oviedo
 
-**Última actualización:** 24 may 2026.
-**Estado:** v4 — listo para enviar a regencia, prensa y para imprenta. Pendiente solo de fechas reales y datos de Domingo.
+**Última actualización:** lunes 25 may 2026 (tarde).
+**Estado:** v6 — segunda auditoría con apertura visual del corpus. **Bloqueo crítico nuevo: el `exposicion.json` y las fotos `pieza-NN.jpg` no coinciden.** La pieza «Cierva de Lluera» (#17) que es motivo del cartel y logo en realidad muestra una Venus con cuerno. Las pieza-21, 22, 23 no son grabados sino objetos líticos (propulsores, azagayas, arpones). Catalog.json (120 fotos Amanda Blanco) está sin metadatos. Próximo paso: sesión con Domingo para re-curar.
+
+Fecha bloqueo anterior (21 jun = domingo): decidido opción A (sáb 20 jun) y aplicado en docs.
 
 Este archivo lista todos los documentos y entregables generados para la exposición. Sirve de mapa para navegar la carpeta.
 
 ---
+
+## 0 · Auditoría y plan de la semana W-4
+
+| Archivo | Propósito |
+|---------|-----------|
+| [`INFORME_AUDIT_25MAY.md`](./INFORME_AUDIT_25MAY.md) | Auditoría coherencia documental + bloqueo fecha (resuelto opción A) |
+| [`PLAN_W4_25MAY.md`](./PLAN_W4_25MAY.md) | Plan accionable lunes 25 may – domingo 31 may |
+| [`CORPUS_REVISION_25MAY.md`](./CORPUS_REVISION_25MAY.md) | Revisión del corpus real · descubre mismatch JSON ↔ fotos |
+| [`CORPUS_AUDIT_FOTOS.md`](./CORPUS_AUDIT_FOTOS.md) | **Audit foto a foto · 43 imágenes abiertas y descritas · tabla maestra para sesión con Domingo** |
+| [`MARCAPAGINAS_REVISION.md`](./MARCAPAGINAS_REVISION.md) | Verificación a mano de los 4 marcapáginas temáticos |
+| [`INSTRUCCIONES_PDFS.md`](./INSTRUCCIONES_PDFS.md) | Cómo generar los PDFs para imprenta |
+
+**Bloqueos críticos abiertos:**
+
+1. **Mismatch corpus.** 18 de 23 fotos `pieza-NN.jpg` tienen motivos distintos a los del JSON. El motivo del cartel (cierva) está mal identificado. **Bloquea:** SVG/iconos, fichas, dossier, nota prensa, guion §3.
+2. **Catalog.json sin metadatos.** 120 fotos profesionales de Amanda Blanco (28-abr-2026) con todos los campos vacíos. **Bloquea:** identificación pieza por pieza.
+
+**Bloqueos resueltos:**
+
+- ✓ Fecha 21 jun = domingo → opción A aplicada: inauguración pública sáb 20 jun, privada vie 19 jun.
+- ✓ Coherencia documental: «trece grabados» corregido en 4 docs, fechas rectificadas en 11 docs + 2 componentes web.
+- ✓ messages/es.json actualizado (25→23, 8→7).
+- ✓ Email imprenta personalizado con 3 destinatarios.
 
 ## 1 · Plan maestro
 
@@ -31,6 +56,7 @@ Este archivo lista todos los documentos y entregables generados para la exposici
 | [`EMAIL_ALBA_VAZQUEZ.md`](./EMAIL_ALBA_VAZQUEZ.md) | Mensaje a Alba Vázquez (Onda Cero) por LinkedIn / X |
 | [`EMAIL_TPA.md`](./EMAIL_TPA.md) | Email para el programa *Pieces* (RTPA) |
 | [`EMAIL_INAUGURACION_PRIVADA.md`](./EMAIL_INAUGURACION_PRIVADA.md) | Invitaciones a la inauguración privada (3 versiones: formal, WhatsApp, DM) |
+| [`EMAIL_IMPRENTA.md`](./EMAIL_IMPRENTA.md) | Email a imprenta con especificaciones técnicas y tabla de adjuntos |
 | [`CALENDARIO_PUBLICACION.md`](./CALENDARIO_PUBLICACION.md) | Plan W-4 → W+1, con versión Txomi + bio y post fijado de Bluesky |
 | [`GUION_INAUGURACION.md`](./GUION_INAUGURACION.md) | Guion 8-12 min para Domingo + Pelayo en la inauguración |
 | [`CAMBIOS_ES_JSON.md`](./CAMBIOS_ES_JSON.md) | Lista de textos a tocar en `messages/es.json` (lo lleva Pelayo) |
@@ -38,6 +64,8 @@ Este archivo lista todos los documentos y entregables generados para la exposici
 ## 4 · Identidad visual
 
 Todos los SVG en [`public/expo/`](./public/expo/). PNG a 300 DPI generados en [`public/expo/png/`](./public/expo/png/).
+
+### Documentados y referenciados por web/imprenta
 
 | Pieza | SVG | PNG (DPI alto) |
 |-------|-----|----------------|
@@ -54,10 +82,34 @@ Todos los SVG en [`public/expo/`](./public/expo/). PNG a 300 DPI generados en [`
 | Marcapáginas 3 · Cierva trilineal | `marcapaginas-3-cierva-trilineal.svg` | `marcapaginas-3-cierva-trilineal.png` |
 | Marcapáginas 4 · 5 cuevas UNESCO Asturias | `marcapaginas-4-cuevas-unesco-asturias.svg` | `marcapaginas-4-cuevas-unesco-asturias.png` |
 
+### Activos auxiliares (presentación, regencia, mockup)
+
+| Pieza | SVG | PNG |
+|-------|-----|-----|
+| Mockup del escaparate | `mockup-escaparate.svg` | `mockup-escaparate.png` |
+| Slide 1 · Portada | `slide-1-cover.svg` | `slide-1-cover.png` |
+| Slide 2 · Cierva (motivo central) | `slide-2-cierva.svg` | `slide-2-cierva.png` |
+| Slide 3 · Venus del cuerno | `slide-3-venus.svg` | `slide-3-venus.png` |
+| Slide 4 · Piedra del oso | `slide-4-piedra-oso.svg` | `slide-4-piedra-oso.png` |
+| Slide 5 · Mapa de cuevas | `slide-5-mapa-cuevas.svg` | `slide-5-mapa-cuevas.png` |
+| Slide 6 · Domingo en taller | `slide-6-domingo.svg` | `slide-6-domingo.png` |
+| Slide 7 · CTA / contacto | `slide-7-cta.svg` | `slide-7-cta.png` |
+
 Regenerar los PNG en cualquier momento:
+
 ```bash
 node scripts/svg-to-png.mjs
 ```
+
+PDFs para imprenta (pendientes de generar, ver `EMAIL_IMPRENTA.md` §2):
+
+```bash
+for f in public/expo/{cartel,pasapaginas,octavilla,marcapaginas-1-venus-gravetienses,marcapaginas-2-arte-franco-cantabrico,marcapaginas-3-cierva-trilineal,marcapaginas-4-cuevas-unesco-asturias}.svg; do
+  rsvg-convert -f pdf -o "${f%.svg}.pdf" "$f"
+done
+```
+
+Alternativa Windows: abrir cada SVG en Inkscape y exportar a PDF.
 
 ## 5 · Portfolio web dentro del sitio de Domingo
 
@@ -66,7 +118,7 @@ node scripts/svg-to-png.mjs
 | `/` (banner verde de aviso) | `src/components/home/ExpoActualBanner.tsx` |
 | `/exposicion/la-esquina-del-peso` | `src/app/exposicion/la-esquina-del-peso/page.tsx` |
 
-Cuando Pelayo cierre las fechas reales, hay que sustituir `[21 de junio]`, `[30 de junio]`, `[sábado 21]` y `[19:30]` en estos dos archivos.
+Cuando Pelayo cierre las fechas reales, hay que sustituir los placeholders `[21 de junio]`, `[30 de junio]`, `[sábado 21]` y `[19:30]` en estos dos archivos. Ver INFORME_AUDIT_25MAY.md §3 para la tabla exacta de líneas y sugerencias.
 
 ## 6 · Scripts auxiliares
 
@@ -79,19 +131,23 @@ Cuando Pelayo cierre las fechas reales, hay que sustituir `[21 de junio]`, `[30 
 
 ## 7 · Pendiente
 
+### CRÍTICO (decisión bloqueante)
+
+- **Fecha real**: 21 jun 2026 es domingo. Decidir opción A (sáb 20 jun, recomendado), B (aceptar dom 21) o C (sáb 27). Ver INFORME_AUDIT_25MAY.md §1.
+
 ### De Pelayo
 
-- **Fechas reales** (asumido 21-30 jun · inauguración sábado 21 a las 19:30).
-- **Capacidad real del local** (asumido 24 — confirmar tras visita).
-- **Datos de Domingo:** año de cada pieza, técnica exacta, peso, dimensiones #8 y Venus.
+- Llamar al **685 660 938** (regencia) y cerrar: fecha, capacidad, privada víspera, restricciones cuelgue, coste cóctel.
+- Sustituir `[móvil]` en los 5 docs que lo llevan o decidir dejar sólo email.
+- Actualizar `messages/es.json` (25→23 piezas, 8→7 cuevas en L4, L44, L49).
 - **Lista de invitados** a la inauguración privada (sugerencia: ≤ 30).
 - **Foto del taller** si quiere reel/teaser (W-2 / W-4).
 
 ### De Domingo
 
-- Confirmar motivo de la pieza #8 (en exposicion.json aparece como «Sin determinar»).
+- Año de cada pieza, técnica, peso, material.
+- **Motivo y dimensiones de la pieza #8** (en `exposicion.json` aparece como «Sin determinar»).
 - Dimensiones y datos completos de la Venus del cuerno.
-- Año aproximado de cada pieza (basta con rangos: 2009, 2010-2012, 2015...).
 
 ### De la regencia de La Esquina del Peso
 
@@ -103,12 +159,12 @@ Cuando Pelayo cierre las fechas reales, hay que sustituir `[21 de junio]`, `[30 
 
 ### De los medios
 
-- Confirmar contacto en *Pieces* (RTPA) tras envío del email.
-- Confirmar Alba Vázquez (Onda Cero) tras DM.
+- Confirmar contacto en *Pieces* (RTPA) tras envío del email (W-3 jue 4 jun).
+- Confirmar Alba Vázquez (Onda Cero) tras DM (W-3 mié 3 jun).
 
 ### Verificación humana antes de imprimir marcapáginas
 
-Los textos de los 4 marcapáginas temáticos se redactaron con base de conocimiento general (cultura Gravetiense, sitio UNESCO 310, abrigo de La Lluera). El investigador automático falló dos veces por sobrecarga del servidor de Anthropic. **Antes de imprimir conviene revisar a mano:**
+Los textos de los 4 marcapáginas temáticos se redactaron con base de conocimiento general. **Antes de imprimir conviene revisar a mano:**
 
 - **Marcapáginas 1 (Venus gravetienses):** datación 33.000-22.000 AP del Gravetiense; algunas fuentes acotan a 28.000-22.000. La Venus de Hohle Fels (Alemania) es Auriñaciense, no Gravetiense estricta, pero suele incluirse en la tradición.
 - **Marcapáginas 2 (Arte franco-cantábrico):** cronología 40.000-12.000 AP; algunas fuentes acotan a 35.000-11.000.
@@ -120,32 +176,37 @@ Los textos de los 4 marcapáginas temáticos se redactaron con base de conocimie
 ## 8 · Cómo convertir el dossier a PDF
 
 **Opción A · Pandoc (si está instalado):**
+
 ```bash
 pandoc DOSSIER_EXPO.md -o dossier.pdf
 ```
 
 **Opción B · VS Code:**
+
 - Instalar la extensión «Markdown PDF» de yzane.
 - Abrir el `.md`, click derecho → «Markdown PDF: Export (pdf)».
 
 **Opción C · Navegador (más fácil):**
+
 - Abrir el `.md` en VS Code con la vista de previsualización.
 - `Ctrl+P` → «Guardar como PDF».
 
 ---
 
-## 9 · Orden de envíos (recomendado)
+## 9 · Calendario rectificado (opción A · recomendada · pendiente confirmar)
 
 | Cuándo | Qué |
 |--------|-----|
-| Ahora (W-4) | Confirmar fechas con la regencia. Imprimir cartel, pasapáginas y octavillas. |
-| W-3 lunes | Post de anuncio en redes propias (versión Txomi). Etiquetar @laesquinadelpeso. |
-| W-3 martes | Enviar a Alba Vázquez (DM LinkedIn y X). |
-| W-3 miércoles | Enviar a *Pieces* (RTPA) por email. Copia a `noticias@rtpa.es`. |
-| W-3 jueves | Enviar nota de prensa a LNE, El Comercio, Asturies24. |
-| W-2 | Avance pieza estrella. Cerrar invitados privados. |
-| W-1 | Recordatorio víspera + actualizar bio y post fijado de Bluesky. |
-| Día -1 (vie 20) | Inauguración privada 19:30. |
-| Día D (sáb 21) | Inauguración pública 19:30. Stories en directo. |
-| Día +1 (dom 22) | Post de agradecimiento. |
-| W+1 a W+2 | 2 posts de mantenimiento durante la expo. Cierre 30 jun. |
+| Hoy lun 25 may (W-4) | Llamar a regencia. Decidir fecha. Pasar lista a Domingo. |
+| mar 26-mié 27 may | Tanda de Edits «fecha real». Documentar huérfanos. |
+| jue 29-vie 30 may | Generar PDFs. Actualizar es.json. Verificar marcapáginas. Foto taller. |
+| mar 2 jun (W-3) | Post de anuncio en redes propias (versión Txomi). Etiquetar @laesquinadelpeso. |
+| mié 3 jun (W-3) | Enviar a Alba Vázquez (DM LinkedIn y X). |
+| jue 4 jun (W-3) | Enviar a *Pieces* (RTPA) por email. Copia a `noticias@rtpa.es`. Nota de prensa a LNE, El Comercio, Asturies24. Envío a imprenta. |
+| mié 10 jun (W-2) | Avance pieza estrella. Cerrar invitados privados. |
+| vie 19 jun (W-1) | Recordatorio víspera + actualizar bio y post fijado de Bluesky. |
+| **vie 19 jun (Día -1)** | **Inauguración privada 19:30.** |
+| **sáb 20 jun (Día D)** | **Inauguración pública 19:30. Stories en directo.** |
+| dom 21 jun (Día +1) | Post de agradecimiento. |
+| mié 24 jun + sáb 28 jun | 2 posts de mantenimiento durante la expo. |
+| mar 30 jun | Cierre. Desmontaje en 7 días naturales. |

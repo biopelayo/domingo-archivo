@@ -1,22 +1,25 @@
 # Calendario de publicación · Exposición Domingo González de Lena
 
-**Hoy:** sábado 24 mayo 2026.
-**Inauguración estimada:** sábado 21 junio 2026 (a confirmar con la regencia).
-**Cierre estimado:** 30 junio 2026 aprox.
+**Hoy:** lunes 25 mayo 2026.
+**Inauguración pública:** sábado 20 junio 2026 a las 19:30 (opción A · confirmada tras auditoría 25 may, pendiente cierre con regencia).
+**Inauguración privada (víspera):** viernes 19 junio 2026 a las 19:30.
+**Cierre:** martes 30 junio 2026.
 
 **Cuentas operativas (Domingo / autor):**
+
 - Instagram: [@txomidelena](https://www.instagram.com/txomidelena/)
 - Bluesky: [@txomidelena.bsky.social](https://bsky.app/profile/txomidelena.bsky.social)
 
 ---
 
-## W-4 · 24-30 mayo · TEASER (opcional, esta semana)
+## W-4 · 25-31 mayo · TEASER (opcional, esta semana)
 
 | Día | Hora | Canal | Formato |
 |-----|------|-------|---------|
-| Martes 27 may | 12:00 | IG + Bluesky | Foto del taller o de una pieza inacabada |
+| Viernes 29 may | 12:00 | IG + Bluesky | Foto del taller o de una pieza inacabada |
 
 **Texto sugerido:**
+
 > Estoy preparando algo en el taller. Pronto, en Oviedo.
 
 **Hashtags:** `#ArtePaleolítico #Asturias #Oviedo`
@@ -25,13 +28,14 @@
 
 ---
 
-## W-3 · 31 may - 6 jun · ANUNCIO PRINCIPAL
+## W-3 · 1-7 junio · ANUNCIO PRINCIPAL
 
 | Día | Hora | Canal | Formato |
 |-----|------|-------|---------|
-| Martes 3 jun | 18:00 | IG (carrusel 5-7), Bluesky (texto + 4 fotos), FB | Anuncio con fechas |
+| Martes 2 jun | 18:00 | IG (carrusel 5-7), Bluesky (texto + 4 fotos), FB | Anuncio con fechas |
 
 **Carrusel de Instagram (7 imágenes):**
+
 1. Cartel de la expo.
 2. Venus del cuerno.
 3. Cierva de Lluera (pieza #17).
@@ -41,11 +45,12 @@
 7. Mosaico con las siete cuevas.
 
 **Texto:**
+
 > **Arte paleolítico asturiano en piedra.**
 >
-> Domingo González de Lena Díaz expone en La Esquina del Peso (calle del Peso 1, Oviedo). 24 reproducciones talladas a mano: trece grabados de siete cuevas asturianas (Pindal, Tito Bustillo, Les Pedroses, Buxu, Llonín, Lluera y Candamo) y la Venus del cuerno.
+> Domingo González de Lena Díaz expone en La Esquina del Peso (calle del Peso 1, Oviedo). 24 piezas talladas a mano: 23 reproducciones en piedra de grabados de siete cuevas asturianas (Pindal, Tito Bustillo, Les Pedroses, Buxu, Llonín, Lluera y Candamo) y la Venus del cuerno.
 >
-> Del 21 al 30 de junio. Inauguración: sábado 21 a las 19:30.
+> Del 20 al 30 de junio. Inauguración: sábado 20 a las 19:30.
 
 **Hashtags:** `#ArtePaleolítico #Oviedo #Asturias #Cuevas #Grabado #ArteRupestre #LaEsquinaDelPeso #Lluera #Pindal #TitoBustillo`
 
@@ -53,38 +58,40 @@
 
 ---
 
-## W-2 · 7-13 jun · AVANCE DE PIEZA ESTRELLA
+## W-2 · 8-14 junio · AVANCE DE PIEZA ESTRELLA
 
 | Día | Hora | Canal | Formato |
 |-----|------|-------|---------|
-| Miércoles 11 jun | 12:00 | IG (foto única + texto), Bluesky | Detalle de pieza estrella |
+| Miércoles 10 jun | 12:00 | IG (foto única + texto), Bluesky | Detalle de pieza estrella |
 
 **Foto:** Venus del cuerno o cierva de Lluera (la que prefiera Domingo).
 
 **Texto:**
-> La Cierva de la Lluera: la pieza que cierra la exposición.
+
+> La Cierva de la Lluera: la pieza que cierra el recorrido por las siete cuevas.
 >
 > [2-3 frases sobre la pieza, por escribir con Domingo.]
 >
-> Del 21 al 30 de junio en La Esquina del Peso (Oviedo).
+> Del 20 al 30 de junio en La Esquina del Peso (Oviedo).
 
 **Reel opcional (30 s):** Domingo grabando una pieza en el taller, sin diálogo.
 
 ---
 
-## W-1 · 14-20 jun · RECORDATORIO VÍSPERA
+## W-1 · 15-19 junio · RECORDATORIO VÍSPERA
 
 | Día | Hora | Canal | Formato |
 |-----|------|-------|---------|
-| Viernes 20 jun | 19:00 | IG + stories + Bluesky | Cuenta atrás |
+| Viernes 19 jun | 19:00 | IG + stories + Bluesky | Cuenta atrás |
 
 **Texto:**
+
 > Mañana abrimos.
 > La Esquina del Peso · Calle del Peso 1 · Oviedo · 19:30.
 
 ---
 
-## DÍA D · sábado 21 jun · INAUGURACIÓN
+## DÍA D · sábado 20 jun · INAUGURACIÓN
 
 | Hora | Canal | Acción |
 |------|-------|--------|
@@ -94,44 +101,50 @@
 
 ---
 
-## W+1 · 22-28 jun · AGRADECIMIENTO
+## W+1 · 21-27 junio · AGRADECIMIENTO
 
 | Día | Hora | Canal | Formato |
 |-----|------|-------|---------|
-| Domingo 22 jun | 12:00 | IG carrusel + Bluesky | Agradecimiento con 3-6 fotos |
+| Domingo 21 jun | 12:00 | IG carrusel + Bluesky | Agradecimiento con 3-6 fotos |
 
 **Texto:**
+
 > Gracias a quienes vinisteis ayer. La exposición sigue hasta el 30 de junio.
 
 ---
 
-## DURANTE LA EXPO · 22-30 jun
+## DURANTE LA EXPO · 21-30 junio
 
 Dos posts más para mantener visibilidad:
-- **Miércoles 25 jun:** una pieza concreta + su historia (foto + texto).
-- **Sábado 28 jun:** recordatorio del cierre + foto del local.
+
+- **Miércoles 24 jun:** una pieza concreta + su historia (foto + texto).
+- **Sábado 27 jun:** recordatorio del cierre + foto del local.
 
 ---
 
 ## Cuentas a etiquetar (en posts principales)
 
 **Esenciales (sí o sí):**
+
 - **@laesquinadelpeso** — el local. Su público amplifica.
 - **@oviedoes** — Ayuntamiento de Oviedo.
 - **@turismo_asturias** — turismo del Principado.
 - **@rtpa** — Radiotelevisión del Principado.
 
 **Prensa local:**
+
 - **@lne_es** — La Nueva España.
 - **@elcomercio_es** — El Comercio.
 - **@asturies24** — Asturies24.
 
 **Patrimonio y prehistoria** (verificar handles antes de etiquetar):
+
 - @museoarqueologicoasturias — Museo Arqueológico de Asturias.
 - @parquearpaleotvg — Parque de la Prehistoria de Teverga.
 - @centrotitobustillo — Centro Tito Bustillo (Ribadesella).
 
 **Cultura asturiana:**
+
 - @cultura_asturias — Consejería de Cultura del Principado.
 - Cuentas de barrio: Antiguo, Fontán.
 
@@ -154,10 +167,10 @@ Dos posts más para mantener visibilidad:
 
 ## Pendiente
 
-- Confirmar las fechas reales (sábado 21 jun es estimación basada en el horizonte de 1 mes).
-- Decidir si hay reel del taller (Domingo trabajando la piedra). Necesario filmar antes del 11 jun.
+- Confirmar las fechas reales con la regencia (opción A · sábado 20 jun pendiente de cierre).
+- Decidir si hay reel del taller (Domingo trabajando la piedra). Necesario filmar antes del 10 jun.
 - Lista final de cuentas amigas a etiquetar (asociaciones culturales asturianas, cuentas de patrimonio, etc.).
-- Enviar emails a Alba Vázquez (Onda Cero) y TPA (*Pieces*) tras el post de anuncio (semana W-3).
+- Enviar emails a Alba Vázquez (Onda Cero) y TPA (*Pieces*) tras el post de anuncio (W-3 mié 3 jun y jue 4 jun).
 
 ---
 
@@ -176,7 +189,7 @@ Si publica él, los textos formales de arriba **chocan** con su tono habitual. P
 
 > Expongo en Oviedo. La Esquina del Peso, calle del Peso 1.
 > 24 piedras. Pindal, Tito Bustillo, Les Pedroses, Buxu, Llonín, Lluera y Candamo. Y la Venus del cuerno.
-> Del 21 al 30 de junio. La inauguración, sábado 21 a las 19:30.
+> Del 20 al 30 de junio. La inauguración, sábado 20 a las 19:30.
 
 ### Versión Txomi · W-2 avance
 
@@ -196,6 +209,7 @@ Si publica él, los textos formales de arriba **chocan** con su tono habitual. P
 > Gracias a los que vinisteis. Sigue hasta el 30.
 
 **Reglas para sus posts:**
+
 - Sin hashtags propios (los hashtags y etiquetas van en las cuentas amigas que comparten).
 - Frases cortas. Una idea por línea.
 - Firma Txomi cuando proceda.
@@ -210,13 +224,13 @@ Si publica él, los textos formales de arriba **chocan** con su tono habitual. P
 **Bio sugerida durante la expo** (añadir una línea, sin tocar el resto):
 
 > Setas, naturaleza, Asturies, arte paleolítico, escultura y grabados prehistóricos.
-> EXPO 21-30 jun · La Esquina del Peso · Oviedo.
+> EXPO 20-30 jun · La Esquina del Peso · Oviedo.
 
 **Post fijado sugerido** (sustituye al pinneado actual de noviembre 2024, que es solo imagen sin texto):
 
 > Expongo en Oviedo. La Esquina del Peso, calle del Peso 1.
 > 24 piedras. Pindal, Tito Bustillo, Les Pedroses, Buxu, Llonín, Lluera y Candamo. Y la Venus del cuerno.
-> Del 21 al 30 de junio. La inauguración, sábado 21 a las 19:30.
+> Del 20 al 30 de junio. La inauguración, sábado 20 a las 19:30.
 
 Adjuntar foto del cartel (`public/expo/png/cartel.png`).
 

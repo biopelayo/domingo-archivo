@@ -1,6 +1,6 @@
 # Guion · Inauguración
 
-## La Esquina del Peso · Oviedo · sábado 21 jun, 19:30 (estimado)
+## La Esquina del Peso · Oviedo · sábado 20 jun 2026, 19:30 (confirmado opción A · pendiente cierre con regencia)
 
 **Tiempo total:** 8-12 minutos. **Voz principal:** Domingo. Pelayo abre y cierra. Sin lectura literal: este guion es orientación.
 
@@ -15,7 +15,7 @@
 
 ## 1 · Bienvenida · Pelayo (1 min) · 19:30
 
-> Buenas tardes. Gracias a [nombre regencia La Esquina del Peso] por abrir su casa, y a Amanda C. Blanco por las fotografías del corpus. Os presento a mi padre, **Domingo González de Lena Díaz**, autor de las 24 piezas que veis aquí.
+> Buenas tardes. Gracias a [nombre regencia La Esquina del Peso] por abrir su casa, y a Amanda C. Blanco por las fotografías del corpus. Os presento a mi padre, **Domingo González de Lena Díaz**, autor de las 24 piezas que cuelgan en esta sala.
 
 ## 2 · Por qué este proyecto · Domingo (3 min)
 
