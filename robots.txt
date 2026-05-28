@@ -1,5 +1,5 @@
 User-Agent: *
 Allow: /
 
-Host: https://biopelayo.github.io/domingo-archivo
-Sitemap: https://biopelayo.github.io/domingo-archivo/sitemap.xml
+Host: https://paleotxomi.com
+Sitemap: https://paleotxomi.com/sitemap.xml
