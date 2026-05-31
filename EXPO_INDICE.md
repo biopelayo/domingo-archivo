@@ -1,8 +1,18 @@
 # Índice · Exposición Domingo González de Lena
 ## La Esquina del Peso · Oviedo
 
-**Última actualización:** lunes 25 may 2026 (tarde).
-**Estado:** v6 — segunda auditoría con apertura visual del corpus. **Bloqueo crítico nuevo: el `exposicion.json` y las fotos `pieza-NN.jpg` no coinciden.** La pieza «Cierva de Lluera» (#17) que es motivo del cartel y logo en realidad muestra una Venus con cuerno. Las pieza-21, 22, 23 no son grabados sino objetos líticos (propulsores, azagayas, arpones). Catalog.json (120 fotos Amanda Blanco) está sin metadatos. Próximo paso: sesión con Domingo para re-curar.
+> 🟢 **¿Sesión nueva? Empieza por [`HANDOFF_EXPO.md`](./HANDOFF_EXPO.md).** Es el punto de entrada autocontenido: contexto, datos, corpus, web, pendientes, estilo. Este índice queda como mapa exhaustivo de la carpeta.
+
+**Última actualización:** jueves 28 may 2026 · handoff escrito.
+**Estado:** v7 — auditoría del corpus aplicada (10 piezas «otras» eliminadas del catalog local, web desplegada con subtítulo nuevo y 4 hilos temáticos). **Pendiente principal:** Pelayo pasa las 24 piezas finales con ID, título, descripción, foto y precio.
+
+**Bloqueos resueltos en esta sesión (28 may):**
+- ✓ Catalog limpio (120→110, 40 archivos físicos borrados, carpetas 2_OTRAS eliminadas).
+- ✓ Web pública desplegada en `paleotxomi.com` y `biopelayo.github.io/domingo-archivo/`.
+- ✓ Subtítulo nuevo aplicado: «Arte Paleolítico parietal y Venus gravetienses».
+- ✓ Bio corta canónica (36 palabras) cerrada.
+- ✓ Datos del padre para Eden listos en `PAQUETE_EDEN.md`.
+- ✓ Contact sheet interactivo para limpiar galería de setas (`CONTACT_SHEET_SETAS.html`).
 
 Fecha bloqueo anterior (21 jun = domingo): decidido opción A (sáb 20 jun) y aplicado en docs.
 
