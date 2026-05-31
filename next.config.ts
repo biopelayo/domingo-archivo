@@ -3,17 +3,18 @@ import createNextIntlPlugin from "next-intl/plugin";
 
 const withNextIntl = createNextIntlPlugin("./src/i18n/request.ts");
 
-// Dominio propio: paleotxomi.com (GitHub Pages con CNAME).
-// El sitio se sirve desde la raíz del dominio, sin basePath.
+// Servido en GitHub Pages bajo subpath /domingo-archivo (sin dominio propio).
+// El sitio vive en https://biopelayo.github.io/domingo-archivo/.
 const nextConfig: NextConfig = {
   output: "export",
+  basePath: "/domingo-archivo",
+  assetPrefix: "/domingo-archivo",
   images: {
     unoptimized: true,
   },
   trailingSlash: true,
   env: {
-    // El helper withBasePath() lo lee; con dominio propio queda vacío.
-    NEXT_PUBLIC_BASE_PATH: "",
+    NEXT_PUBLIC_BASE_PATH: "/domingo-archivo",
   },
 };
 

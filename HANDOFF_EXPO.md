@@ -127,8 +127,8 @@ Pelayo te las va a pasar **una a una con: ID, título, explicación breve, foto,
 ## 7 · Estado de la web y del deploy
 
 - Repositorio: <https://github.com/biopelayo/domingo-archivo> (`main` + `gh-pages`).
-- Dominio custom: **paleotxomi.com** (CNAME activo).
-- URL alternativa: <https://biopelayo.github.io/domingo-archivo/>.
+- URL pública: **<https://biopelayo.github.io/domingo-archivo/>** (GitHub Pages, sin dominio custom).
+- `paleotxomi.com` se retiró el 31 may 2026: el dominio no estaba registrado y bloqueaba el acceso al subpath. CNAME eliminado, `basePath` configurado a `/domingo-archivo`.
 - Página de la expo: `src/app/exposicion/la-esquina-del-peso/page.tsx` (ya actualizada con subtítulo nuevo, bio corta y 4 ejes).
 - Banner de la home: `src/components/home/ExpoActualBanner.tsx` (ya con fechas 20-30 jun).
 - Local dev: `npm run dev` → http://localhost:3000.
